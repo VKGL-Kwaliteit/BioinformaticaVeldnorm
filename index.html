@@ -12,51 +12,69 @@
     <p>
        In the past years bioinformatics has become a crucial part of several medical laboratories, such as Genetics , Pathology and Medical Microbiology.
        Hence, bioinformaticians need to comply to both the ISO-15189 and the IVDR. However, the ISO-15189 does not include bioinformatic or software development processes. 
-       Annex I of the IVDR states: 
-       16.2.   For devices that incorporate software or for software that are devices in themselves, the software shall be developed and manufactured in accordance with the state of the art taking into account the principles of development life cycle, risk management, including information security, verification and validation.
+       <br> Annex I of the IVDR states: 
+       <br> 16.2.   For devices that incorporate software or for software that are devices in themselves, the software shall be developed and manufactured in accordance with the state of the art taking into account the principles of development life cycle, risk management, including information security, verification and validation.
+    </p>
+    <p>
+        There is a need for a fieldnorm, that defines what needs to be documented to have bioinformatics as a 
 
-       There is a need for a fieldnorm, that defines what needs to be documented to have bioinformatics as a 
-
+    </p>
+    <p>
        The IVDR does not refer to specific standards or norms for software development, however, the IEC-62304 is the harmonized standard for software as a medical device. Following the fieldnorm described here, does not mean compliance to this harmonized standard. But does include the majority of items that need to be documented for a class A Software as a Medical Device.
-
-
     </p>
 
     <p>
         Within this document, references are made to the ISO-15189:2022.
         
-
+        Goals of this fieldnorm:
+        - decrease the documentation burdon
+        - pragmatic solutions
+        - clarity on the working 
     </p>
 
 
     <h2> Control of documents</h2>
     <p>
-        Bioinformaticians work in a git environment. Git is a distributed version control system that tracks changes in any set of computer files, usually used for coordination work among programmers collaboratively developing source code during software development.  
+    Bioinformaticians work in a git environment. Git is a distributed version control system that tracks changes in any set of computer files, usually used for coordination work among programmers collaboratively developing source code during software development.  
  
     Software procedures and related documentation needs to be controlled, and according to ISO-15189, this can be in any form or type of medium.
     For software development, there are several reasons to not include all the software documentation within the medical laboratories chosen quality management system.
-    1. 	Software development is done in a distributed version control system. These systems are used for coordination work among programmers. Often these systems also allow for documentation of procedures. With the following advantages
-    a. 	Automatically link to i.e. code, issues, releases, and release notes.
-    b. 	Possibility to include ‘code blocks’ that allow for copy-paste into the console/terminal. It’s fast and readable for bioinformaticians. For example, code blocks can be used for general procedures to start a pipeline, or for trouble shooting.
-    2. 	Software development, and hence, corresponding documentation is prone to frequent updates. With the QMS of the laboratory, there are often waiting steps for different members of the laboratory to verify or authorize documentation. Hence, there might be a delay in release of a new version as the documentation of the previous release is not authorized yet.
-    3. 	 
-    </p>
+    <ul>
+        <li>
+            Software development is done in a distributed version control system. These systems are used for coordination work among programmers. Often these systems also allow for documentation of procedures. With the following advantages
+            a. 	Automatically link to i.e. code, issues, releases, and release notes.
+            b. 	Possibility to include <code> code blocks </code> that allow for copy-paste into the console/terminal. It’s fast and readable for bioinformaticians. For example, code blocks can be used for general procedures to start a pipeline, or for trouble shooting.
+        </li>
+        <li>
+            Software development, and hence, corresponding documentation is prone to frequent updates. With the QMS of the laboratory, there are often waiting steps for different members of the laboratory to verify or authorize documentation. Hence, there might be a delay in release of a new version as the documentation of the previous release is not authorized yet.
+        </li> 
+        <li> add more </li>	 
+    </ul>
+
+</p>
     <p>
     To allow for a git-like QMS to be used by bioinformaticians the following aspects need to be considered, and documented within the QMS how compliance is achieved.  
     ISO-15189:2022, 8.3.1
-    a) documents are uniquely identified; 
-    b) documents are approved for adequacy before issue by authorized personnel who have the =expertise and competence to determine adequacy; 
-    c) documents are periodically reviewed and updated as necessary; 
-    d) relevant versions of applicable documents are available at points of use and, where necessary, their distribution is controlled; 
-    e) changes and the current revision status of documents are identified; 
-    f) documents are protected from unauthorized changes and any deletion or removal; 
-    g) documents are protected from unauthorized access; 
-    h) the unintended use of obsolete documents is prevented, and suitable identification is applied to them if they are retained for any purpose; 
-    i) at least one paper or electronic copy of each obsolete controlled document is retained for a specified time period or in accordance with applicable specified requirements.
+    <br>a) documents are uniquely identified; 
+    <br>b) documents are approved for adequacy before issue by authorized personnel who have the =expertise and competence to determine adequacy; 
+    <br>c) documents are periodically reviewed and updated as necessary; 
+    <br>d) relevant versions of applicable documents are available at points of use and, where necessary, their distribution is controlled; 
+    <br>e) changes and the current revision status of documents are identified; 
+    <br>f) documents are protected from unauthorized changes and any deletion or removal; 
+    <br>g) documents are protected from unauthorized access; 
+    <br> h) the unintended use of obsolete documents is prevented, and suitable identification is applied to them if they are retained for any purpose; 
+    <br>i) at least one paper or electronic copy of each obsolete controlled document is retained for a specified time period or in accordance with applicable specified requirements.
 
 
     </p>
-
+<p>
+    Examples are:
+    <ul>
+        <li>1. Github pages</li>
+        <li>2. Gitlab</li>
+        <li>3. Confluence</li>
+    </ul>
+</p>
     <h2> Software Life Cycle Processes</h2>
     <p>
         ipsum
@@ -71,9 +89,47 @@
 
     <h2> Risk Management</h2>
     <p>
-        ipsum
+        <b>from IEC-62304</b>
+        <br>The MANUFACTURER shall include or reference in the software development plan, a plan to
+conduct the ACTIVITIES and TASKS of the software RISK MANAGEMENT PROCESS, including the
+management of RISKS relating to SOUP. [Class A, B, C]
 
+        7.4 RISK MANAGEMENT of software changes
+        <br>7.4.1 Analyse changes to MEDICAL DEVICE SOFTWARE with respect to SAFETY
+        <br>The MANUFACTURER shall analyse changes to the MEDICAL DEVICE SOFTWARE (including SOUP) to
+        determine whether:
+        <br>a) additional potential causes are introduced contributing to a hazardous situation; and
+        <br>b) additional software RISK CONTROL measures are required.
+        <br> [Class A, B, C]
+       
+        <br>General idea after long brainstorm:
+        <br>Do think about updating the risk analysis table with each release!!
+
+        <br> Bioinformatic pipelines are often included in Risk analysis created by the Laboratory, which are often in control of a laboratory specialist. The risk management of the laboratory does often not include regulare updates of bioinformatic pipelines or tools. 
+        <br> Within each release, there could be new risks introduced, risks can be changed, or the risk mitigation measure can change. 
+        Risk management of software could be either updating risks with each release. 
+        There could be a software release form, where there is a section about risks. Where one could elaborate on risk analysis, and only include risks in the laboratories risk analysius table when the risk is persistent / noteworthy whatever. This way, small risks that are immediately mitigated, or for which subsequent tests are written do not need to appear in a list.
+
+        
+
+        
+    </p>
+    <p>
+        HvD: note from lecture about new ISO: 
+        <br>How does risk management contribute to patient safety?
+        <br>Do we need more trend analsys??  
     </p>
     
+    <h2> Laboratory patients, user, and personnel feedback</h2>
+     
+    Feedback to bioinformaticians can include different items:
+    <ul>
+        <li>New feature requests (improvement suggestions by personnel). NOTE!!! most of these never reach the registration of the laboratory, we need to adress this somehow. This could be as labour intensive as 'counting and reporting' or making a note, that our work is per definition innovative and always includes improvements, hence, not taken along with ...</li>
+        <li>Bugs. NOTE these probably never end up on the 'nonconfirming list' of the lab, what to do here?</li> 
+        <li>add more</li>
+    </ul>
+    A procedure should be documented about how feedback can be send to the bioinformatics team; i.e. email, ticketing system, meetings etc. 
+    <br>Most Bioinformaticians work with a ticketing system to prioritise their work items. 
+    <br> In general, the medical laboratory has a system in place to handle feedback and non conforming work. The bioinformaticians will use that system. However, once it comes to development of code, it is allowed to follow the ticketing system of the bioinformatics team. Make sure that there is a link between the issue of the bioinformics team and the id (?) of the laboratory. 
 </body>
 </html>
