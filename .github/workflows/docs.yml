@@ -38,14 +38,13 @@ jobs:
         run: pnpm docs:build
 
       # please check out the docs of the workflow for more details
-      # @see https://github.com/crazy-max/ghaction-github-pages
+      # @see https://github.com/peaceiris/actions-gh-pages
       - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          # deploy to gh-pages branch
-          target_branch: gh-pages
-          # deploy the default output dir of VuePress
-          build_dir: docs/.vuepress/dist
-        env:
           # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          # deploy the default output dir of VuePress
+          publish_dir: docs/.vuepress/dist
+          # deploy to gh-pages branch
+          publish_branch: gh-pages
