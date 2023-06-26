@@ -1,5 +1,8 @@
 name: docs
 
+permissions: 
+  contents: write
+
 on:
   # trigger deployment on every push to main branch
   push:
@@ -38,13 +41,14 @@ jobs:
         run: pnpm docs:build
 
       # please check out the docs of the workflow for more details
-      # @see https://github.com/peaceiris/actions-gh-pages
+      # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: crazy-max/ghaction-github-pages@v2
         with:
-          # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
-          # deploy the default output dir of VuePress
-          publish_dir: docs/.vuepress/dist
           # deploy to gh-pages branch
-          publish_branch: gh-pages
+          target_branch: gh-pages
+          # deploy the default output dir of VuePress
+          build_dir: docs/.vuepress/dist
+        env:
+          # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
