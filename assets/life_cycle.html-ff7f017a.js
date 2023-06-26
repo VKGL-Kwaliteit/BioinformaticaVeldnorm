@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-504218b8","path":"/fieldnorm/life_cycle.html","title":"Software life cycle processes","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1687771082000},"filePathRelative":"fieldnorm/life_cycle.md"}');export{e as data};

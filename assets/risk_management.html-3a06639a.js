@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6c4c52f8","path":"/fieldnorm/risk_management.html","title":"Risk management","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1687771082000},"filePathRelative":"fieldnorm/risk_management.md"}');export{e as data};
