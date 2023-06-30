@@ -54,6 +54,10 @@ pnpm install
 ```
 
 ## Development
+You want to contribute the VKGL Bioinformatics Fieldnorm, great! 
+Strictly speaking the scheme below is not enforced, however strongly recommended to keep your changes grouped together 
+in your git history. Commit your changes, do not hesitate to do that often, however make understandable commit messages.
+What is enforced in the end is a code review process to keep information accurate. 
 
 ### Git flow
 Using the [git flow](https://jeffkreeftmeijer.com/git-flow/) scheme is strongly 
@@ -97,3 +101,5 @@ If everything looks decent enough create a pull request for the main.
 If your additions are in the develop branch on the [VKGL-Kwaliteit repositories](https://github.com/VKGL-Kwaliteit/BioinformaticaVeldnorm) 
 you can directly pull the branch into the main by creating a pull request in [github](https://github.com/VKGL-Kwaliteit/BioinformaticaVeldnorm).
 After a code review by one of the team members your additions will be merged and almost directly visible on the website.
+If you are using a fork go to your own repository choose the develop branch and hit the Contribute arrow to Open a pull 
+request on VKGL-Kwaliteit:main. 
