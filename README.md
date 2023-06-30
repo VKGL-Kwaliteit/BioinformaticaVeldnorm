@@ -31,7 +31,7 @@ To verify if NVM has been installed, do:
 nvm -v
 ```
 
-This outputs `0.39.3` if the installation was sucesfull. If there is an error try to debug with the [official documentation](https://github.com/nvm-sh/nvm#table-of-contents).
+This outputs `0.39.3` if the installation was successful. If there is an error try to debug with the [official documentation](https://github.com/nvm-sh/nvm#table-of-contents).
 
 Next install the correct Node version via NVM:
 
@@ -53,12 +53,53 @@ Now navigate to the project folder and run:
 pnpm install
 ```
 
-## Start the development version
+## Development
+You want to contribute the VKGL Bioinformatics Fieldnorm, great! 
+Strictly speaking the scheme below is not enforced, however strongly recommended to keep your changes grouped together 
+in your git history. Commit your changes, do not hesitate to do that often, however make understandable commit messages.
+What is enforced in the end is a code review process to keep information accurate. 
 
+### Git flow
+Using the [git flow](https://jeffkreeftmeijer.com/git-flow/) scheme is strongly 
+encouraged to keep the history of the project orderly and concise.
+From a practical point of view using the git flow plugin is the easiest way (but not strictly necessary). 
+1. Install the [plugin](https://github.com/nvie/gitflow).
+2. Init the plugin:
+```bash
+git flow init
+# production:  main
+# development: develop
+# feature:     feature/
+# bugfix:      not used (keep default)
+# release:     release/
+# hotfix:      not used (keep default)
+# support:     not used (keep default)
+# version tag prefix: [] 
+```
+
+#### Start your addition
+After initialization of the plugin starting a branch to write your addition to the Fieldnorm is easy:
+```bash
+git flow feature start "GREAT ADDITION"
+```
+
+#### Finish your addition
+Merging your addition into the main development track is done quite similar:
+```bash
+git flow feature finish
+```
+
+#### Test your additions
 To start the development version first navigate to the project folder. Next run the pnpm command:
-
 ```bash
 pnpm docs:dev
 ```
-
 This starts a local development version that can be viewed in a browser via `localhost:8080`.
+
+#### Pull your additions from develop
+If everything looks decent enough create a pull request for the main.
+If your additions are in the develop branch on the [VKGL-Kwaliteit repositories](https://github.com/VKGL-Kwaliteit/BioinformaticaVeldnorm) 
+you can directly pull the branch into the main by creating a pull request in [github](https://github.com/VKGL-Kwaliteit/BioinformaticaVeldnorm).
+After a code review by one of the team members your additions will be merged and almost directly visible on the website.
+If you are using a fork go to your own repository choose the develop branch and hit the Contribute arrow to Open a pull 
+request on VKGL-Kwaliteit:main. 
