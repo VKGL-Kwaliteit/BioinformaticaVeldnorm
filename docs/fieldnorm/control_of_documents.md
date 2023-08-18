@@ -26,14 +26,40 @@ Bioinformaticians create workflows collaboratively on a computer within a git en
 2. Gitlab pages
 3. Confluence
 
-Many of those tools, if used in a specific way, can allow Bioinformaticians to work in a comfortable environement, while complying to the ISO norms requirements. They are of course multiple ways to implement such a system, and as long as it is documented how your system complies to the ISO requirements, all is well. If you are looking for some inspirations, in the next paragraph we will describe an example on how to use one this tool to follow the ISO requirements for both cotrolling the workflows / software you develop, and their associated documentation / SOP.
+Many of those tools, if used in a specific way, can allow Bioinformaticians to work in a comfortable environement, while complying to the ISO norms requirements. They are of course multiple ways to implement such a system, and as long as it is documented how your system complies to the ISO requirements, all is well. If you are looking for some inspirations, in the next paragraph we will describe an example on how to use one this tool to follow the ISO requirements for both controlling the workflows/software you develop, and their associated documentation/SOP.
 
 ## Example case : The usage of GitLab
 
 ### Central gathering of all SOP on Gitlab pages
+_I wanted to add images to illustrates but I did not found out how_ :(
 
+Using gitlab pages and mkdocs, you can easily create a beautiful hub to store all your SOP. If using the following guidelines, then you will comply with each of the ISO requirements mentionned above : 
+
+1. Each SOP will become a markdown file. It's name will include a number for easy and unique identification of the document. The numbering can also be used to classify each SOP into categories. Example :
+- 10 - Data Access
+    - 11 - GenomeScan -> 11_genomescan.md
+    - 12 - InternalSequencers -> 12_internalsequencers.md
+- 20 - Data Processing
+    - 21 - WES -> 21_wes_flow.md
+    - 22 - RNAseq -> 22_rnaseq_analysis.md
+
+2. The repository is set such only restricted people who manages the documentation approves new entries to be added into the main document (dev -> main). And rules are set so each new feature or entry is approved by the competent person before being accepted (feature -> dev)
+
+3. The repository is set such as anyone who see something out to date can work on updating the document and make a request to the documentation managers so they can accept the update.  Besides, at the footer of each page, you can see the date of last modification.
+
+4. The documentation is always available on gitlab by members of the Bioinformatic team. They can access only the production release to use as documentation material.
+
+5. On the gitlab repository of the documentation, it would be a convention to create a tag and a release for every production version released. Going to this tag directory, you can see what changed for each released and what has been changed in which document. Everything can be traced back using commits.
+
+6. No one else that the documentation managers can remove or modify the production documentation. Each modification (which includes deletion) must be reviewed twice before being actually effective in production. So there is a protectiob against accidental removals.
+
+7. Only members of the gitlab team can access the documentation.
+
+8. For each tag, you can access the version of the documentation at a certain timee. So all is archived by default in an organized way.
 
 
 ### Control of workflows
+
+_Same here... I made beautifull images to explain and I can't include them here_ :(
 
 
