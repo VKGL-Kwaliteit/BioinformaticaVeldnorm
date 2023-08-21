@@ -1,16 +1,26 @@
 # Risk management
+Given the dynamic nature of bioinformatic software, the risk management documentation of bioinformatic  software needs more frequent revisions compared to that of tests in the laboratory. Consequently, maintaining two distinct documents—one for the laboratory and another for bioinformatics—could optimize the risk management process.
 
-General idea after long brainstorm:
-Do think about updating the risk analysis table with each release!!
-Bioinformatic pipelines are often included in Risk analysis created by the Laboratory, which are often in control of a laboratory specialist. The risk management of the laboratory does often not include regulare updates of bioinformatic pipelines or tools.
-Within each release, there could be new risks introduced, risks can be changed, or the risk mitigation measure can change. Risk management of software could be either updating risks with each release. There could be a software release form, where there is a section about risks. Where one could elaborate on risk analysis, and only include risks in the laboratories risk analysius table when the risk is persistent / noteworthy whatever. This way, small risks that are immediately mitigated, or for which subsequent tests are written do not need to appear in a list. from IEC-62304
-The MANUFACTURER shall include or reference in the software development plan, a plan to conduct the ACTIVITIES and TASKS of the software RISK MANAGEMENT PROCESS, including the management of RISKS relating to SOUP. [Class A, B, C] 7.4 RISK MANAGEMENT of software changes
-7.4.1 Analyse changes to MEDICAL DEVICE SOFTWARE with respect to SAFETY
-The MANUFACTURER shall analyse changes to the MEDICAL DEVICE SOFTWARE (including SOUP) to determine whether:
-1. additional potential causes are introduced contributing to a hazardous situation; and
-2. additional software RISK CONTROL measures are required.
-[Class A, B, C]
+The bioinformatics risk assessment should integrate with the laboratory risk management procedure, which can use the existing method described in the laboratories QMS, such as SAFER (Safety Assurance Factors for EHR Resilience) or FMEA (Failure Modes and Effects Analysis). In the scenario where the bioinformatics team opts for an alternative approach, this alternative approach needs to be documented.
 
-HvD: note from lecture about new ISO:
-How does risk management contribute to patient safety?
-Do we need more trend analsys??
+Often, bioinformatics software is a part of the laboratory test, hence it should be clear which part of the laboratory test is covered by the bioinformatics risk management.  For instance, for sequencing the bioinformatics risk management starts with the initial sequencer output and ends with the storage of results.
+
+## Risk Management in Software Life Cycle Processes
+1. Risk Identification involves a comprehensive analysis of risk factors such as project scope, requirements, technology stack, resource availability, and external dependencies.
+Typically bioinformatics risks involve topics like:
+   - Software goal
+   - Software installation (and dependencies)
+   - Running software tools
+   - Interactions / connections with databases / other software / other hardware
+   - Data storage
+   - User errors
+   - Compute environment is down / not reachable
+   - Technical challenges
+   - Resource constraints
+3. Risk Assessment: Once risks are identified, they need to be evaluated to determine their potential impact and likelihood. This assessment allows prioritization, focusing on high-impact and high-probability risks. Risk assessment involves quantitative or qualitative analysis, aiding in the allocation of resources and attention to the most critical areas.
+4. Risk Mitigation and Planning: Based on the assessment, a robust risk must be mitigated. (CHECK ISO15189 2022 voor nieuwe benaming). 
+5. Monitoring and Control: Throughout the software life cycle, continuous monitoring of identified risks and the effectiveness of mitigation strategies is crucial. Often risks are already identified and discussed during development, whether or not these are all documented depends on the risks. 
+6. Communication and Documentation: Clear communication of risks, mitigation strategies, and their progress is vital among team members, stakeholders, and management. Comprehensive documentation of identified risks, their assessment, and the implemented mitigation measures aids in transparency and knowledge transfer, ensuring a cohesive approach.
+7. Adaptation to Change: Risks and their measures may evolve over time. Risks can be reassessed, and new ones may emerge. Risk management strategies should be flexible to accommodate changes and updates, maintaining relevance throughout the software life cycle.
+
+In conclusion, risk management within the software life cycle processes is an iterative and proactive approach to ensure the successful delivery of software projects while minimizing the impact of potential uncertainties. 
