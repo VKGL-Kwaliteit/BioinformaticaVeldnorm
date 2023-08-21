@@ -20,7 +20,7 @@ Typically bioinformatics risks involve topics like:
    - Technical challenges
    - Resource constraints
 2. Risk Assessment: Once risks are identified, they need to be evaluated to determine their potential impact and likelihood. This assessment allows prioritization, focusing on high-impact and high-probability risks. Risk assessment involves quantitative or qualitative analysis, aiding in the allocation of resources and attention to the most critical areas.
-3. Risk Mitigation and Planning: Based on the assessment, a robust risk must be mitigated. (CHECK ISO15189 2022 voor nieuwe(?) benaming). 
+3. Risk Mitigation and Planning: Based on the risks assessment, risks must be mitigated. 
 4. Monitoring and Control: Throughout the software life cycle, continuous monitoring of identified risks and the effectiveness of mitigation strategies is crucial. Often risks are already identified and discussed during development, whether or not these are all documented depends on the risks. 
 5. Communication and Documentation: Clear communication of risks, mitigation strategies, and their progress is vital among team members, stakeholders. Comprehensive documentation of identified risks, their assessment, and the implemented mitigation measures aids in transparency and knowledge transfer, ensuring a cohesive approach.
 6. Adaptation to Change: Risks and their measures may evolve over time. Risks can be reassessed, and new ones may emerge. Risk management strategies should be flexible to accommodate changes and updates, maintaining relevance throughout the software life cycle.
