@@ -29,7 +29,7 @@ In conclusion, risk management within the software life cycle processes is an it
 
 ## More documentation 
 
-ISO-14791, Annex C Questions that can be used to identify medical device characteristics that could impact on safety     
+ISO-14971, Annex C Questions that can be used to identify medical device characteristics that could impact on safety     
 ISO-22367, Annex D Identification of characteristics related to safety      
 IEC-62304     
 IMDRF/SaMD WG/N12FINAL:2014 "Software as a Medical Device": Possible Framework for Risk Categorization and Corresponding Consideration    
