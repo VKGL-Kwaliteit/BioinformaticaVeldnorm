@@ -97,5 +97,23 @@ You can push your feature to the [main repository](https://github.com/VKGL-Kwali
 After you are finished and everything looks decent enough you can hand in your addition by creating a pull 
 request in [github](https://github.com/VKGL-Kwaliteit/BioinformaticaVeldnorm).
 After a code review by one of the team members your additions will be merged to our develop branch.
-Once in a while (timing has still to be determined) the team will release an update by merging the develop with
-the main. That will trigger a new version on the website..
+
+### Release procedure
+Once in a while, the team will revise the current document, and might release a new version of this norm.
+A revision of the norm document will include a release review by the team, during which the develop will be 
+merged with the main branch. An update on the main branch will trigger a new version on the website.
+
+#### Start a release
+The release procedure will start branching the main branch and merge the develop into this. This is done using 
+the git flow plugin, using the following procedure:
+```bash
+git flow release start "VERSION NORM RELEASE CANDIDATE"
+```
+
+#### Create the release request
+A pull request for this release candidate onto the main branch will be created by the team, after which a 
+last round of feedback is initiated.
+
+#### Release
+If the team agrees the release candidate is ready for publication the pull request is merged, after which it 
+will be publicated on the [website](https://vkgl-kwaliteit.github.io/BioinformaticaVeldnorm/). 
