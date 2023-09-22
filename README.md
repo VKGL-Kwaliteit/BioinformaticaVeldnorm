@@ -84,6 +84,19 @@ After initialization of the plugin starting a feature branch to write your addit
 ```bash
 git flow feature start "GREAT ADDITION"
 ```
+Pages are written using the [markup language markdown](https://www.markdownguide.org/).  
+Some handies (feel free to add if you like more):
+
+| Syntax                                         | Description                                                         |                              Example                              |
+|:-----------------------------------------------|:--------------------------------------------------------------------|:-----------------------------------------------------------------:|
+| # H1                                           | Header line                                                         |                              *table*                              |
+| - bullet                                       | Bullet points                                                       |                              *table*                              |
+| \*\*bold**                                     | Bold                                                                |                             **bold**                              |
+| \*italic                                       | Italic                                                              |                             *italic*                              |
+| \`command`                                     | Code                                                                |                             `command`                             |
+| \```bash commands ```                          | Code block (can use syntax highlighting by indicating the language) |                    ```this is a code block ```                    |
+| \[text](link)                                  | Hyperlink                                                           | [extended syntax](https://www.markdownguide.org/extended-syntax/) |
+| \![alt text]\(image_file.png "Optional title") | Image                                                               |                ![VKGL logo](VKGL-logo.webp "VKGL")                |
 
 #### Test your additions
 To start the development version first navigate to the project folder. Next run the pnpm command:
