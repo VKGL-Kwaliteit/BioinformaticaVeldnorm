@@ -78,15 +78,11 @@ git flow init
 ```
 
 #### Start your addition
-After initialization of the plugin starting a branch to write your addition to the Fieldnorm is easy:
+Additions to our Fieldnorm should be handed in via a feature branch. The feature branch should have a clear name 
+that shortly describes your addition. Feature branches are located under feature/ in our repository.
+After initialization of the plugin starting a feature branch to write your addition to the Fieldnorm is easy:
 ```bash
 git flow feature start "GREAT ADDITION"
-```
-
-#### Finish your addition
-Merging your addition into the main development track is done quite similar:
-```bash
-git flow feature finish
 ```
 
 #### Test your additions
@@ -96,10 +92,10 @@ pnpm docs:dev
 ```
 This starts a local development version that can be viewed in a browser via `localhost:8080`.
 
-#### Pull your additions from develop
-If everything looks decent enough create a pull request for the main.
-If your additions are in the develop branch on the [VKGL-Kwaliteit repositories](https://github.com/VKGL-Kwaliteit/BioinformaticaVeldnorm) 
-you can directly pull the branch into the main by creating a pull request in [github](https://github.com/VKGL-Kwaliteit/BioinformaticaVeldnorm).
-After a code review by one of the team members your additions will be merged and almost directly visible on the website.
-If you are using a fork go to your own repository choose the develop branch and hit the Contribute arrow to Open a pull 
-request on VKGL-Kwaliteit:main. 
+#### Finish your addition
+You can push your feature to the [main repository](https://github.com/VKGL-Kwaliteit/BioinformaticaVeldnorm)  if you have access or to your own fork. 
+After you are finished and everything looks decent enough you can hand in your addition by creating a pull 
+request in [github](https://github.com/VKGL-Kwaliteit/BioinformaticaVeldnorm).
+After a code review by one of the team members your additions will be merged to our develop branch.
+Once in a while (timing has still to be determined) the team will release an update by merging the develop with
+the main. That will trigger a new version on the website..
