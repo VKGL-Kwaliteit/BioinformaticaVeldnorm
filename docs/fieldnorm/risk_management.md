@@ -6,7 +6,7 @@ The bioinformatics risk assessment should integrate with the laboratory risk man
 Often, bioinformatics software is a part of the laboratory test, hence it should be clear which part of the laboratory test is covered by the bioinformatics risk management.  For instance, for sequencing the bioinformatics risk management starts with the initial sequencer output and ends with the storage of results.
 
 ## Risk Management in Software Life Cycle Processes
-Risk management is part of the software life cycle process and is required for every (standalone) pipeline/workflow or software tool validated for diagnostics use. Risk management can be broken down into 5 steps, where step 2 and 3 should be part of the laboratories QMS. When the bioinformatics team opts for an alternative approach, step 2 and 3 need to be documented.  
+Risk management is part of the software life cycle process and is required for every (standalone) pipeline/workflow or software tool validated for diagnostics use. Risk management can be broken down into 6 steps, where step 2 and 3 should be part of the laboratories QMS. When the bioinformatics team opts for an alternative approach, step 2 and 3 need to be documented.  
 
 1. Risk Identification involves a comprehensive analysis of risk factors such as project scope, requirements, technology stack, resource availability, and external dependencies.
 Typically bioinformatics risks involve topics like:
