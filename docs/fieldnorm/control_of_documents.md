@@ -1,14 +1,14 @@
 # Control of documents
 
-## Introduction 
+## Why do Bioinformaticians need a different QMS
 
-Bioinformaticians work in a fairly different environement than biologists. The workflows they create, and the documentation that describe them, are all stored in files on a computer, and sometimes worked on by several person at the same time. So to follow the changes on both workflow and documentation, a more fitting system than the classic Quality Management System (QMS) offered for the biologists must be used. As specified in the ISO-15189, "Software procedures and related documentation needs to be controlled". This can be in any form or type of medium, as long as we achieve a certain set of requirements. In this document, we offer guidelines on how to comply with the norms while having a bioinformatician friendly QMS.
+Bioinformaticians work in a fairly different environement than biologists, and the classic QMS offered to biologists are often impractical for Bioinformaticians needs. Here is a list of the most wanted features :
 
-Bioinformaticians needs a different Quality Management System than biologists. Software they are developping are distributed using a version control system
+- Code blocks can be copy/pasted safely, as opposed to standard QMS word or pdf format which introduce erroneous changes on some special characters (such as "-")
+- Linking versions of the documentation with the corresponding release number of the documented tool
+- Let the documentation update process be in the hands of Bioinformatician when changes in software must take place immediately, without getting in a stale review process when involving laboratory members
 
-- Version control system allow to create a code friendly documentation, where code blocks can be copy/pasted safely, as opposed to standard QMS word or pdf format 
-- Software are developped and distributed using a version control system, such as git or gitlab, which offer extra functionnalities related to code (e.g. : linking a new release with a set of solved issues, )
-
+As specified in the ISO-15189, "Software procedures and related documentation needs to be controlled". This can be in any form or type of medium, as long as a certain set of requirements is achieved. Software are developped and distributed using a version control system, such as git or gitlab. Those often offer extra functionnalities related to code (e.g. : linking a new release with a set of solved issues), which make them good candidate to be a Bioinformatician QMS system. In this document, we offer guidelines on how to comply with the norms while implementing a bioinformatician friendly QMS. 
 
 ## ISO norm requirements
 
@@ -24,9 +24,9 @@ To allow for a "Bioinformatician friendly" QMS, the following aspects need to be
 8. The unintended use of obsolete documents is prevented, and suitable identification is applied to them if they are retained for any purpose
 9. One paper or electronic copy of each obsolete controlled document is retained for a specified time period or in accordance with applicable specified requirements
 
-## Why do Bioinformaticians need a different QMS
+## Candidates for a Bioinformatician friendly QMS
 
-Bioinformaticians create workflows collaboratively on a computer within a git environment. Git is a distributed version control system that tracks changes in any set of computer files. This can be used to track the changes of the code itself, but also in its documentation, which can describe the Standard Operating Procedures to use it. Git comes in with a set of features allowing to track issues and their resolution, new release of a workflow and its newest features. As the workflow often get upgraded and updated, their documentation, as well, is susceptible to change. Which is why many Bioinforaticians have turned their back from a standard QMS to have their own documentation system, often linked to git. Such system also offer possibilities to copy-paste code blocks while performing the SOP for a given flow, making it so much easier and less prone to errors. Examples of those documentations systems are:
+Bioinformaticians create workflows collaboratively on a computer within a git environment. Git is a distributed version control system that tracks changes in any set of computer files. This can be used to track the changes of the code itself, but also in its documentation, which can describe the Standard Operating Procedures to use it. Git comes in with a set of features allowing to track issues and their resolution, new release of a workflow and its newest features. As the workflow often get upgraded and updated, their documentation, as well, is susceptible to change. Which is why many Bioinformaticians their own form of QMS. Examples of those documentations systems are:
 
 1. Github pages
 2. Gitlab pages
@@ -37,21 +37,33 @@ Many of those tools, if used in a specific way, can allow Bioinformaticians to w
 ## Example case : The usage of GitLab
 
 ### Central gathering of all SOP on Gitlab pages
-_I wanted to add images to illustrates but I did not found out how_ :(
 
-Using gitlab pages and mkdocs, you can easily create a beautiful hub to store all your SOP. If using the following guidelines, then you will comply with each of the ISO requirements mentionned above : 
+Using gitlab pages and mkdocs, you can easily create well structured and easy to naviguate hub to store all your SOPs. Here are some guideline to illustrates the point of attention to comply with ISO-15189 :
 
-1. Each SOP will become a markdown file. It's name will include a number for easy and unique identification of the document. The numbering can also be used to classify each SOP into categories. Example :
+1. Each SOP becomes a markdown file. Its name will include a number for easy and unique identification of the document. The numbering can also be used to classify each SOP into categories. _Example_ :
+   
 - 10 - Data Access
-    - 11 - GenomeScan -> 11_genomescan.md
+    - 11 - ExternalSequencers -> 11_externalsequencers.md
     - 12 - InternalSequencers -> 12_internalsequencers.md
 - 20 - Data Processing
     - 21 - WES -> 21_wes_flow.md
-    - 22 - RNAseq -> 22_rnaseq_analysis.md
+    - 22 - RNAseq -> 22_rnaseq_flow.md
+- 30 - Data sharing
+    - 21 - Cluster -> 31_share_cluster_user.md
+    - 22 - External -> 32_share_external_user.md      
 
-2. The repository is set such only restricted people who manages the documentation approves new entries to be added into the main document (dev -> main). And rules are set so each new feature or entry is approved by the competent person before being accepted (feature -> dev)
+ Here we seperate 3 flows in categories : accessing data, processing data and sharing data, ✨ _allowing smoothe and logical navigation within your documentation_ ✨  (sorry guys, I can't help it, I need my _beautiful_ sentences)
 
-3. The repository is set such as anyone who see something out to date can work on updating the document and make a request to the documentation managers so they can accept the update.  Besides, at the footer of each page, you can see the date of last modification.
+2. The repository is set with special users type permissions and structure :
+    - In a git way, a __"main"__ branch corresponds to the __"production"__ documentation, and a __dev__ branch mirrors the main branch at first, and will then accumulates modification that needs to appear in the upcoming release of the documentation
+    - __Members__ can create issues to report something incorrect with a specific document, or the need to create a new document
+    - From any issue, a branch can be created by a __member__ from the __dev__ branch to work on fixing the issue
+    - Once the changes are ready, __members__
+    - __Documentation managers__ create new documentation releases (dev -> main)And rules are set so each new feature or entry is approved by the competent person before being accepted (feature -> dev)
+
+3. At the footer of each page, you can see the date of last modification, which facilitates identification of outdated documents. However, a system must be put in place in order to check each document is being periodically reviewed. This could be done in the format of a markdown table on the index page of the documentation :
+
+Insert Here fancy table, coming soon
 
 4. The documentation is always available on gitlab by members of the Bioinformatic team. They can access only the production release to use as documentation material.
 
