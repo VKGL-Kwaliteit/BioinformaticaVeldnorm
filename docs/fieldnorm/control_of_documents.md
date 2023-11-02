@@ -4,6 +4,12 @@
 
 Bioinformaticians work in a fairly different environement than biologists. The workflows they create, and the documentation that describe them, are all stored in files on a computer, and sometimes worked on by several person at the same time. So to follow the changes on both workflow and documentation, a more fitting system than the classic Quality Management System (QMS) offered for the biologists must be used. As specified in the ISO-15189, "Software procedures and related documentation needs to be controlled". This can be in any form or type of medium, as long as we achieve a certain set of requirements. In this document, we offer guidelines on how to comply with the norms while having a bioinformatician friendly QMS.
 
+Bioinformaticians needs a different Quality Management System than biologists. Software they are developping are distributed using a version control system
+
+- Version control system allow to create a code friendly documentation, where code blocks can be copy/pasted safely, as opposed to standard QMS word or pdf format 
+- Software are developped and distributed using a version control system, such as git or gitlab, which offer extra functionnalities related to code (e.g. : linking a new release with a set of solved issues, )
+
+
 ## ISO norm requirements
 
 To allow for a "Bioinformatician friendly" QMS, the following aspects need to be considered and documented :
@@ -57,9 +63,5 @@ Using gitlab pages and mkdocs, you can easily create a beautiful hub to store al
 
 8. For each tag, you can access the version of the documentation at a certain timee. So all is archived by default in an organized way.
 
-
-### Control of workflows
-
-_Same here... I made beautifull images to explain and I can't include them here_ :(
 
 
