@@ -4,11 +4,11 @@
 One of the main responsibilities of Bioinformaticians within a diagnostic setting involves the development and maintenance of software used in diagnostic processes. Because ISO-15189 does not cover software development, it is essential that inhouse software is created and maintained in accordance with recognized harmonized standards, such as IEC-62304. The IEC-62304 description of the software development life cycle (SDLC) is consistent with the practices in most software-centric entities. 
 
 ## 1.2 Software Development Life Cycle
-SDLC processes that are commonly used include planning, requirements, architectural design, development, testing, deployment and maintenance. Bioinformatics software development within a ISO-15189 certified genetics laboratory shall establish documented procedures that cover all SDLC stages.
+SDLC processes that are commonly used include planning, requirements, architectural design, development, testing, deployment and maintenance. Bioinformatics software development within a ISO-15189 certified genetics laboratory shall establish documented guidelines that cover all SDLC stages.
 
 ## 1.2.1 Planning
 Planning entails developing a comprehensive software development plan. This includes brainstorming the initial ideas, ideation of the final goal, determining the necessary resources, creating a schedule and establishing achievable milestones. 
-Within a genetics laboratory software development often occurs within the background of laboratory tests. The laboratory therefore needs to develop a solid strategy for change management for its genetic tests that emphasizes all these features, and software development should be an integral part of this strategy. 
+Within a laboratory software development often occurs within the background of laboratory tests. The laboratory therefore needs to develop a solid strategy for change management for its genetic tests that emphasizes all these features, and software development should be an integral part of this strategy. 
 Smaller scale software development and maintenance cycles that might not affect other areas of a genetic lab should maintain a similar strategy on a smaller scale and less laborious, and might use tooling that is more effective for software development, such as code based documentation, an online documentation system that are more suitable for software development planning (like confluence, or wikipages), an issue management system (like issue manager or jira) or combinations thereof.
 Guidelines should cover both strategies, large scale and small scale.
 
@@ -25,7 +25,7 @@ Guidelines should support the following processes to gather, convert, track and 
 
   d.       Maintain communication with end users throughout the development life cycle in order to prevent unexpected adjustments to requirements in later stages of development.
 
-A widely adopted software development strategy involves dividing a development project over several periods. It is advised to use an approach that enables to release partial deliverables to users each period, which enables user feedback upon each deliverable during the entire lifetime of the project, and provides ample opportunities for clarification of requirements or adapt their priorities.   
+NOTE: A widely adopted software development strategy involves dividing a development project over several periods. It is advised to use an approach that enables to release partial deliverables to users each period, which enables user feedback upon each deliverable during the entire lifetime of the project, and provides ample opportunities for clarification of requirements or adapt their priorities.   
 
 ## 1.2.3 Design
 Here the software architecture is defined, describing the high-level structure, components, interfaces, and interactions of the software system. The architectural design lays the groundwork for the detailed design and implementation phases.
@@ -42,7 +42,7 @@ The development stage will be the big bulk of a project, here code is created th
   d.       Establish a well-defined development and release cycle with set time periods for preparation, development, testing & releasing. This allows multiple developers to work cohesively on the project and creates structured testing and release moments during the implementation and maintenance processes. It also enables ample opportunities for user reflections on the deliverables during the lifetime of project.
 
 ## 1.2.5 Testing
-Before implementation, software should be extensively tested, verified and validated. While ISO 15189 does not provide specific guidelines on how to conduct software validation, it emphasizes the importance of ensuring that software is validated and verified following recognized industry standards. We advise the use of the software validation and verification procedures as described in this guideline.
+Before implementation, software should be extensively tested, verified and validated. While ISO 15189 does not provide specific guidelines on how to conduct software validation, it emphasizes the importance of ensuring that software is validated and verified following recognized industry standards. Software validation and verification should be performed in accordance with this document (_link to verification_validation_).
 
 ## 1.2.6 Implementation
 Once everything is ready, a clear time point should be determined to release the software. The exact time point at which a software is released can be determined by the Development & Release cycle or released in an independent matter. The software functionality and release date should be clearly communicated with the end users.
