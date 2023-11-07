@@ -4,7 +4,7 @@
 One of the main responsibilities of Bioinformaticians within a diagnostic setting involves the development and maintenance of software used in diagnostic processes. Because ISO-15189 does not cover software development, it is essential that inhouse software is created and maintained in accordance with recognized harmonized standards, such as IEC-62304. The IEC-62304 description of the software development life cycle (SDLC) is consistent with the practices in most software-centric entities. 
 
 ## 1.2 Software Development Life Cycle
-SDLC processes that are commonly used include planning, requirements, architectural design, development, testing, deployment and maintenance. Bioinformatics software development within a ISO-15189 certified genetics laboratory shall establish documented guidelines that cover all SDLC stages.
+SDLC processes that are commonly used include planning, requirements, architectural design, development, testing, deployment and maintenance. Laboratories shall establish documented guidelines that cover all SDLC stages.
 
 ## 1.2.1 Planning
 Planning entails developing a comprehensive software development plan. This includes brainstorming the initial ideas, ideation of the final goal, determining the necessary resources, creating a schedule and establishing achievable milestones. 
