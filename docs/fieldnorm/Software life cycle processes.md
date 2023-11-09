@@ -13,8 +13,8 @@ Smaller-scale software development and maintenance cycles that might not affect 
 Guidelines should cover and define both large-scale and small-scale strategies.
 
 _Note: Examples of small scale & large scale projects could be:_\
-_  -  Small-scale: the adaptation of a new component to existing software_\
-_  -  Large-scale: developing entirely new software or big refactors of existing software_
+_-  Small-scale: the adaptation of a new component to existing software_\
+_-  Large-scale: developing entirely new software or big refactors of existing software_
 
 ## 1.2.2 Requirements
 This process involves gathering, documenting, and analyzing the software requirements. It includes capturing both functional and non-functional requirements that the software must fulfill to meet the intended use and comply with regulatory standards. One example strategy for capturing this, which is also well suited for medical laboratories, is to use user stories because stakeholders within a medical laboratory have very specific needs but are often not able to translate those into well-defined technical requirements.
