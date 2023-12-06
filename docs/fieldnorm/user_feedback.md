@@ -19,3 +19,5 @@ Examples of systems that may be used (together) to collect and register feedback
 - Lab meetings where feature requests are discussed and minutes are recorded and documented
 - Built-in issue trackers of (git) version control systems such as Github or Gitlab
 - Work management / Task planner systems such as JIRA, Microsoft Teams Planner
+- Azure DevOps services
+
