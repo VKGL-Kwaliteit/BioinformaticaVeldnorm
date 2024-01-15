@@ -21,11 +21,7 @@ Verification and Validation of software should be performed as described below.
 The IEC-62304 mentiones different aspects of verification; i.e. software unit verification and software integration testing, and validation; i.e. software system test.
 
 
-## Out of scope
 
-Note that the following changes are out of scope for Software Verification and Validation and should follow the procedures of the medical laboratory:
-- update on new genome builds
-- update ???
 
 ## Software verification
 
@@ -84,3 +80,7 @@ For Human Genetics, specific GIAB samples are used for performance evaluation. I
 ## Choice of tools and/or settings
 
 A subject missing in _software verification_ and _software validation_ is how specific tools and/or settings have been selected. One could add a section to the _software validation_ document with an introduction into the issue, the choices made, the results, and the conclusions.
+
+## Builds, databases, reference sets etc. 
+
+Bioinformatic workflows often use (external) databases, reference sets, or specific genome builds. The link to them could be hardcoded, hence, updating them should follow software verification and validation as described above. The clinical validation of new database/reference set/genome build could be done either with the medical laboratories validation procedures or the software validation. Choose the kind of validation that works best for this particular update.  
