@@ -21,4 +21,14 @@ Examples of systems that may be used (together) to collect and register feedback
 
 We make a distinction to general feedback and issues / requests that relate to the use of Bioinformatics software as described in this section and more serious issues that have lead for instance to missed or wrong diagnoses or to delays that cause diagnostic results and reports to exceed the deadline. For these we refer to the section on non-conforming work. Both 
 
-# non-conforming work
+### non-conforming work
+
+```mermaid
+graph TD;
+    A[Software issue]-->B[Did it cause a delay in producing a diagnosis ?];
+    A-->C[wrong diagnosis ? ];
+    A-->D[Software still running within requirements];
+    B-->E[QMS report non-conforming work];
+    C-->E;
+    D-->F[Report issue with Bioinf];
+```
