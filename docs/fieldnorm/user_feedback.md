@@ -11,7 +11,7 @@ The requirements of the system are :
 
 Examples of systems that may be used (together) to collect and register feedback and requests that can be configured to meet the stated requirements are
 
-- A special purpose (non-Personal) email address 
+- A special purpose (non-personal) email address 
 - A ticketing system 
 - A web / service portal where issues / requests can be submitted by filling out forms
 - Lab meetings where feature requests are discussed and minutes are recorded
@@ -19,9 +19,11 @@ Examples of systems that may be used (together) to collect and register feedback
 - Work management / Task planner systems such as JIRA, Microsoft Teams Planner
 - Azure DevOps services
 
-We make a distinction to general feedback and issues / requests that relate to the use of Bioinformatics software as described in this section and more serious issues that have lead for instance to missed or wrong diagnoses or to delays that cause diagnostic results and reports to exceed the deadline. For these we refer to the section on non-conforming work. Both 
+We make a distinction to general feedback and issues / requests that relate to the use of Bioinformatics software as described in this paragraph and more serious issues that have lead for instance to missed or wrong diagnoses or to delays that cause diagnostic results and reports to exceed the deadline. For proccessing latter issues, we refer to the paragraph on non-conforming work. 
 
 ### non-conforming work
+
+To determine whether a Bioinformatics software issue should be treated as non-conforming work as described in [REF] we recommend to use the following flow-chart
 
 ```mermaid
 graph TD;
