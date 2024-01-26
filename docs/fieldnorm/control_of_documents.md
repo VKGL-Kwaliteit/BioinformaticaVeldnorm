@@ -1,18 +1,18 @@
 # Control of documents
 
-## Why do Bioinformaticians need a different QMS
+## Bioinformaticians can benefit from a different QMS
 
-_Bioinformaticians_ work in a fairly different environement than biologists, and the classic Quality Management System (QMS) offered to biologists are often impractical for _Bioinformaticians_ needs. Here is a list of the most wanted features :
+_Bioinformaticians_ work in a fairly different environment than other disciplines of the medical laboratory, and the classic Quality Management System (QMS) offered to biologists is often impractical for _Bioinformaticians_ needs. Here is a list of the features Bioinformaticians would like to have :
 
 - Code blocks can be copy/pasted safely, as opposed to standard QMS with a word or pdf format, which introduce erroneous changes on some special characters (such as "-")
 - Linking versions of the _documentation_ with the corresponding release number of the documented tool
 - Let the _documentation_ update process be in the hands of _Bioinformaticians_ when changes in software must take place immediately, without getting in a stale review process when involving laboratory members
 
-As specified in the ISO-15189, "Software procedures and related documentation needs to be controlled". This can be in any form or type of medium, as long as a certain set of requirements is achieved. Software are developped and distributed using a version control system, such as git or gitlab. Those often offer extra functionnalities related to code (e.g. : linking a new release with a set of solved issues), which make them good candidate to be a _Bioinformatician_ QMS system. In this document, we offer guidelines on how to comply with the norms while implementing a _bioinformatician_ friendly QMS. 
+As specified in the ISO-15189, "Software procedures and related documentation needs to be controlled". This can be in any form or type of medium, as long as a certain set of requirements is achieved. Softwares are developped and distributed using version control systems, such as git or gitlab. Those often offer extra functionalities related to code (e.g. : linking a new release with a set of solved issues), which makes them good candidates to be a _Bioinformatician_ QMS system. In this document, we offer guidelines on how to comply to ISO-15189 while implementing a _Bioinformatician_ friendly QMS. 
 
 ## ISO norm requirements
 
-To allow for a "_Bioinformatician_ friendly" QMS, the following aspects need to be considered and documented :
+To allow for a _Bioinformatician_ friendly QMS while complying to the ISO-15189:2022 requirements, the following aspects need to be considered and documented :
 
 1. Documents are uniquely identified
 2. Documents are approved for adequacy before issue by authorized personnel who have the expertise and competence to determine adequacy
@@ -52,7 +52,7 @@ Using gitlab pages and mkdocs, you can easily create a well structured _document
     - 31 - Cluster -> 31_share_cluster_user.md
     - 32 - External -> 32_share_external_user.md      
 
- Here we seperate 3 flows in categories : accessing data, processing data and sharing data, ✨ _allowing smoothe and logical navigation within your documentation_ ✨  (sorry guys, I can't help it, I need my _beautiful_ sentences)
+ Here we seperate 3 flows in categories : accessing data, processing data and sharing data, allowing intuitive navigation within your documentation depending on the action you are trying to perform.
 
 2. The repository is set with special users type permissions and structure :
     - In a git way, a __"main"__ branch corresponds to the __"production"__ _documentation_, and a __"dev"__ branch mirrors the main branch at first, and will then accumulates modification that needs to appear in the upcoming release of the _documentation_
