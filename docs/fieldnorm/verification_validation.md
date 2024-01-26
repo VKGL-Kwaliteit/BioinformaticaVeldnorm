@@ -14,24 +14,18 @@ In short, Barry Boehm expressed the difference between the software verification
 
 Hence, for each release _Software verification_ **and** _Software validation_ is required. 
 
-Often these definitions do not match with the definitions used in the medical laboratory. However, in terms of software development and thus bioinformatics, following software verification and software validation definitions make more sense. Noteworthy, the ISO-15189 states that validation is needed for laboratory designed or developed methods and for validated methods subsequently modified. Both are true for software development.
-
-Verification and Validation of software should be performed as described below. 
+## Software verification
 
 The IEC-62304 mentiones different aspects of verification; i.e. software unit verification and software integration testing, and validation; i.e. software system test.
 
-
-
-
-## Software verification
-
-Testing whether the code is correctly developed can be done on different levels, for example through:
+Testing whether the code is correctly developed can be done on different levels, such as:
 
 - Code reviews 
 - Unit testing
 - Integration testing
 - End to end workflow tests
 
+In case of automated testing, there must be a procedure of how the results are checked. I.e. a merge request is not possible when automated testing fails, or registering the passing of all automated testing among other verification results. 
 The extend of software verification performed by the Bioinformaticians will differ in each team, it should be clear from the procedure which software verification should be performed. 
 
 ## Software validation
@@ -41,7 +35,7 @@ In order to support the repeatability of the validation, the following must be r
 - The person executing the test
 - The person evaluating the test
 - Date of the test
-- The software tested, including its version number
+- The software tested, including its version or commit number
 - If applicable: configuration, hardware, testing tools
 - The test, including steps to take the test, expected results and acceptance criteria
 - The results, including samples used
@@ -84,3 +78,4 @@ A subject missing in _software verification_ and _software validation_ is how sp
 ## Builds, databases, reference sets etc. 
 
 Bioinformatic workflows often use (external) databases, reference sets, or specific genome builds. The link to them could be hardcoded, hence, updating them should follow software verification and validation as described above. The clinical validation of new database/reference set/genome build could be done either with the medical laboratories validation procedures or the software validation. Choose the kind of validation that works best for this particular update.  
+Note that, linking to external databases for which changes and updates cannot be forseen is a risk. Validate these databases with each release, this could be a simple check whether the functionality is still present. Make sure you have a risk assesments on these external databases.  
