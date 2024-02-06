@@ -101,4 +101,4 @@ Hotfixes are updates which are directly uploaded in to the actual live software 
 testing and implementation phases of the SDLC. They are meant as a quick way to fix unforeseen but process breaking bugs. 
 In general, having well-defined development, testing and implementation processes would negate the need for hotfixes. However, there is always the possibility for bugs to occur. The laboratory should have clear guidelines on how and when hotfixes are performed. 
 
-> 📝 _Note: hotfixes could be classified as non-conforming work and might need to be followed up through the laboratories QMS, more on this in [user feedback](https://github.com/VKGL-Kwaliteit/BioinformaticaVeldnorm/blob/feature/user_feedback/docs/fieldnorm/user_feedback.md)_
+> 📝 _Note: hotfixes could be classified as non-conforming work and might need to be followed up through the laboratories QMS, more on this in [user feedback](feedback.md)_
