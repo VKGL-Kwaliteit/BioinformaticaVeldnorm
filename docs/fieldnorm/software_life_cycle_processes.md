@@ -8,7 +8,7 @@ maintenance of software used in diagnostic processes.
 The IEC-62304 description of the software development life cycle (SDLC) is consistent with the practices of most 
 software-centric entities. 
 SDLC processes that are commonly used include planning, requirements, architectural design, development, testing, 
-deployment, and maintenance. Laboratories should establish documented guidelines that cover all SDLC stages.
+deployment, and maintenance. Laboratories should establish documented guidelines that cover all SDLC these stages.
 
 ## 1. Planning
 Planning entails developing a comprehensive software development plan. 
@@ -23,7 +23,7 @@ Smaller-scale software development and maintenance cycles that might not affect 
 maintain a similar strategy, although on a smaller scale and less demanding.
 Guidelines should cover and define both large-scale and small-scale strategies.
 
-> 📝 _Note: Examples of small scale & large scale projects could be:_
+> 📝 _Note: Examples of small scale and large scale projects could be:_
 > - _Small-scale: the adaptation of a new component to existing software_
 > - _Large-scale: developing entirely new software, big refactors of existing software or changes to algorithms_
 
@@ -43,7 +43,8 @@ Guidelines should support the following processes to gather, convert, track, and
    to avoid unexpected adjustments to requirements later on.
 
 
-> 📝 _Note: A widely adopted software development strategy involves dividing a development project over several periods. 
+> 📝 _Note:  
+> A widely adopted software development strategy involves dividing a development project over several periods. 
 > It is advised to use an approach that enables the release of partial deliverables to users each period, 
 > which enables user feedback upon each deliverable during the entire lifetime of the project, 
 > and provides ample opportunities for clarification of requirements or adapt their priorities._
@@ -71,7 +72,7 @@ Therefore, the laboratories' software development process should include the use
 
 The following processes are not required, as small bioinformatics teams might find them too difficult to incorporate. 
 Nonetheless, it is strongly recommended that your guidelines should also include:
-3. A well-defined development & release cycle with set time periods for preparation, development, testing, & releasing. 
+3. A well-defined development and release cycle with set time periods for preparation, development, testing, and releasing. 
    This allows multiple developers to work cohesively on the project and creates structured testing and release moments during the implementation and maintenance processes. It also enables ample opportunities for user reflection on the deliverables during the lifetime of projects.
 4. Writing code with unit and integration tests. Moreover, conducting regular code reviews is highly recommended. These methods will be invaluable during software maintenance, testing, and release. It enables a wider understanding of parts of the code, as unit tests often embody general usage as well as very specific exceptions, and code reviews enforce colleagues to have a look and understand what your code is doing.
 
