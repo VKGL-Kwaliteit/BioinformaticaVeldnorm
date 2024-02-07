@@ -1,6 +1,6 @@
 # Risk management
 
-Given the dynamic nature of bioinformatic software, the risk management documentation of bioinformatic software needs more frequent revisions compared to that of tests in the laboratory. Consequently, maintaining two distinct documents—one for the laboratory and another for bioinformatics—could optimize the risk management process.
+Given the dynamic nature of bioinformatic software, the risk management documentation of bioinformatic software needs more frequent revisions compared to that of tests in the laboratory. Consequently, maintaining two distinct documents — one for the laboratory and another for bioinformatics — could optimize the risk management process.
 
 The bioinformatics risk assessment should integrate with the laboratory risk management procedure, which can use the existing method described in the laboratories QMS, such as SAFER (Safety Assurance Factors for EHR Resilience) or FMEA (Failure Modes and Effects Analysis). In the scenario where the bioinformatics team opts for an alternative approach, this alternative approach needs to be documented.
 
@@ -11,7 +11,7 @@ Often, bioinformatics software is a part of the laboratory test, hence it should
 Risk management is part of the software life cycle process and is required for every (standalone) pipeline/workflow or software tool validated for diagnostics use. Risk management can be broken down into 6 steps, where step 2 and 3 should be part of the laboratories QMS. When the bioinformatics team opts for an alternative approach, step 2 and 3 need to be documented.
 
 1. Risk Identification involves a comprehensive analysis of risk factors such as project scope, requirements, technology stack, resource availability, and external dependencies.
-   Typically bioinformatics risks involve topics like:
+   Typically, bioinformatics risks involve topics like:
    - Software goal
    - Software installation (and dependencies)
    - Running software tools
@@ -25,19 +25,19 @@ Risk management is part of the software life cycle process and is required for e
 3. Risk Mitigation and Planning: Based on the risks assessment, risks must be mitigated. Risk can be mitigated by applying different strategies:
 
    - Completely remove risk by adding software functionality, for example check user input before use.
-   - Decrease impact by adding software functionality, for example detect when a compute environment is down and send an email to relevant users.
+   - Decrease impact by adding software functionality, for example detect when a compute environment is down and email relevant users.
    - Decrease impact by having backup system in place, for example a temporary compute environment.
    - Decrease likelihood by providing clear instruction to end users.
 
-4. Monitoring and Control: Throughout the software life cycle, continuous monitoring of identified risks and the effectiveness of mitigation strategies is crucial. Often risks are already identified and discussed during development, whether or not these are all documented depends on the risks.
+4. Monitoring and Control: Throughout the software life cycle, continuous monitoring of identified risks and the effectiveness of mitigation strategies is crucial. Often risks are already identified and discussed during development, whether these are all documented depends on the risks.
 5. Communication and Documentation: Clear communication of risks, mitigation strategies, and their progress is vital among team members, stakeholders. Comprehensive documentation of identified risks, their assessment, and the implemented mitigation measures aids in transparency and knowledge transfer, ensuring a cohesive approach.
-6. Adaptation to Change: Risks and their measures may evolve over time. Risks can be reassessed, and new ones may emerge. It is imperative that risk assessments maintain their relevance throughout the software life cycle. Therefore, risk management strategies should be flexible to accommodate changes and updates, and should contain a specific update interval. It is recommended to set this reevaluation interval to every major.minor software version and/or two times per year.
+6. Adaptation to Change: Risks and their measures may evolve over time. Risks can be reassessed, and new ones may emerge. It is imperative that risk assessments maintain their relevance throughout the software life cycle. Therefore, risk management strategies should be flexible to accommodate changes and updates, and should contain a specific update interval. It is recommended to set this reevaluation interval to every major-minor software version and/or two times per year.
 
 In conclusion, risk management within the software life cycle processes is an iterative and proactive approach to ensure the successful release of software projects while minimizing the impact of potential uncertainties.
 
 ## More documentation
 
-ISO-14971, Annex C Questions that can be used to identify medical device characteristics that could impact on safety
-ISO-22367, Annex D Identification of characteristics related to safety
-IEC-62304
-IMDRF/SaMD WG/N12FINAL:2014 "Software as a Medical Device": Possible Framework for Risk Categorization and Corresponding Consideration
+* ISO-14971, Annex C Questions that can be used to identify medical device characteristics that could impact on safety
+* ISO-22367, Annex D Identification of characteristics related to safety
+* IEC-62304
+* IMDRF/SaMD WG/N12FINAL:2014 "Software as a Medical Device": Possible Framework for Risk Categorization and Corresponding Consideration
