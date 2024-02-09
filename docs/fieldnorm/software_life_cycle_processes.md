@@ -23,7 +23,7 @@ Smaller-scale software development and maintenance cycles that might not affect 
 maintain a similar strategy, although on a smaller scale and less demanding.
 Guidelines should cover and define both large-scale and small-scale strategies.
 
-> 📝 _Note: Examples of small scale and large scale projects could be:_
+> _Note: Examples of small scale and large scale projects could be:_
 > - _Small-scale: the adaptation of a new component to existing software_
 > - _Large-scale: developing entirely new software, big refactors of existing software or changes to algorithms_
 
@@ -106,4 +106,4 @@ Hotfixes are updates which are directly uploaded in to the actual live software 
 testing and implementation phases of the SDLC. They are meant as a quick way to fix unforeseen but process breaking bugs. 
 In general, having well-defined development, testing and implementation processes would negate the need for hotfixes. However, there is always the possibility for bugs to occur. The laboratory should have clear guidelines on how and when hotfixes are performed. 
 
-> 📝 _Note: hotfixes could be classified as non-conforming work and might need to be followed up through the laboratories QMS, more on this in [user feedback](feedback.md)_
+> _Note: hotfixes could be classified as non-conforming work and might need to be followed up through the laboratories QMS, more on this in [user feedback](feedback.md)_
