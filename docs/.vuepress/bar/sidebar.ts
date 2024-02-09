@@ -10,7 +10,8 @@ export const sidebarImport: SidebarConfig = {
         '/fieldnorm/software_life_cycle_processes.md',
         '/fieldnorm/verification_validation.md',
         '/fieldnorm/risk_management.md',
-        '/fieldnorm/feedback.md'
+        '/fieldnorm/feedback.md',
+        '/fieldnorm/references.md'
       ],
     },
   ]

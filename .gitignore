@@ -1,4 +1,7 @@
+# node system
 node_modules
 .temp
 .cache
-.idea
+
+# IDE's or development programmes
+.idea/
