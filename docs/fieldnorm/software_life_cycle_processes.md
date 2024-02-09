@@ -29,27 +29,32 @@ Guidelines should cover and define both large-scale and small-scale strategies.
 
 
 ## 2. Requirements
-This process involves gathering, documenting, and analyzing the software requirements. 
-It includes capturing both functional and non-functional requirements that the software must fulfill to meet the 
-intended use and comply with regulatory standards. 
-One example strategy for capturing this, which is also well suited for medical laboratories, is to use user stories, 
-as stakeholders in a medical laboratory have very specific needs 
-and often find it difficult to translate these into well-defined technical requirements.
+This process involves gathering, documenting, and analyzing the software requirements. It includes capturing both functional and non-functional requirements that the software must fulfill to meet the intended use and comply with regulatory standards. These requirements should be stated as clear and complete as possible before starting on a project. Additionally, requirements should be stated in broad and unspecific form, as to not limit the bioinformatician too much when developing the software. Once these requirements have been implemented as features in the software, they should be validated before the release is used in production. The requirements may relate to several aspects, including:
+- the performance of the desired software
+- the computing environment
+- compatibility
+- input- and output-formats
+- interfaces to other systems
+- communication from the software
+- security requirements
+- user interfaces to the software
+- data definitions
+- installation and acceptance requirements
+- requirements related to the methods of operation and maintenance
+- network-related requirements
+- user maintenance requirements
+- regulatory requirements
+
+All software development teams should have a standardized and documented approach for gathering requirements. One example strategy for capturing this, which is also well suited for medical laboratories, is to use user stories, as stakeholders in a medical laboratory have very specific needs and often find it difficult to translate these into well-defined technical requirements. Another strategy is to express the requirements in a form that is SMART (specific, measurable, attainable, realistic and time-bound).
 
 Guidelines should support the following processes to gather, convert, track, and update the requirements during a project:
-1. Collaboration between end users and developers when defining software requirements. 
+1. Collaboration when defining software requirements: Requirements can come from end-users, bio-informaticians and other stakeholders, and they should be discussed between all of them before adding, removing or altering them.
 2. Conversion of users' requirements into small, individual development tasks.
-3. A plan for keeping in touch with end users throughout the different stages of the development process 
-   to avoid unexpected adjustments to requirements later on.
+3. A agreed-upon system to track requirements throughout the development process (e.g. in JIRA, Confluence or GitHub/GitLab).
+4. A plan for keeping in touch with end users throughout the different stages of the development process to avoid unexpected adjustments to requirements later on. 
 
+The requirements may (and are likely to) change during the process, however, it is encouraged to evaluate if the project is still in line with the original requirements, so that 'scope creep' is prevented. A widely adopted software development strategy involves dividing a development project over several periods. It is advised to use an approach that enables the release of partial deliverables to users each period, which enables user feedback upon each deliverable during the entire lifetime of the project and provides ample opportunities for clarification and adaptation.
 
-> 📝 _Note:  
-> A widely adopted software development strategy involves dividing a development project over several periods. 
-> It is advised to use an approach that enables the release of partial deliverables to users each period, 
-> which enables user feedback upon each deliverable during the entire lifetime of the project, 
-> and provides ample opportunities for clarification of requirements or adapt their priorities._
-
-A more thorough explanation of what requirements might include can be found in section [Requirements in software development](requirements.md) of this document.
 
 ## 3. Design
 Here the software architecture is defined, describing the high-level structure, components, interfaces, 
