@@ -11,6 +11,7 @@ export const sidebarImport: SidebarConfig = {
         '/fieldnorm/verification_validation.md',
         '/fieldnorm/risk_management.md',
         '/fieldnorm/feedback.md',
+        '/fieldnorm/configuration_management.md'
         '/fieldnorm/references.md'
       ],
     },
