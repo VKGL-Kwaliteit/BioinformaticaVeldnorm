@@ -14,7 +14,7 @@ devDependencies:
     specifier: ^3.3.1
     version: 3.3.4
   vuepress:
-    specifier: 2.0.0-beta.62
+    specifier: ^2.0.0-beta.62
     version: 2.0.0-beta.62(@vuepress/client@2.0.0-beta.62)(stylus@0.54.8)(vue@3.3.4)
 
 packages:
