@@ -57,34 +57,34 @@ Many of those tools, if used in a specific way, can allow _Bioinformaticians_ to
 
 2. The repository is set with special users type permissions and structure :
     - In a git way, a __"main"__ branch corresponds to the __"production"__ _documentation_, and a __"dev"__ branch mirrors the main branch at first, and will then accumulates modifications that needs to appear in the upcoming release of the _documentation_
-    - 🤵 __Members__ can create issues to report something incorrect with a specific document, or the need to create a new document
-    - From any issue, a branch can be created by a 🤵 __Member__ from the __dev__ branch to work on fixing the issue
-    - Once the changes are ready, 🤵 __Members__ can submit their modification for review by a 👮 __Documentation manager__ and if needed by an other additional 🤵 __Members__
-    - 🤵 __Members__ and 👮 __Documentation managers__ may go into one or several review processes to perfect the document
+    - __Members__ can create issues to report something incorrect with a specific document, or the need to create a new document
+    - From any issue, a branch can be created by a __Member__ from the __dev__ branch to work on fixing the issue
+    - Once the changes are ready, __Members__ can submit their modification for review by a __Documentation manager__ and if needed by an other additional __Members__
+    - __Members__ and __Documentation managers__ may go into one or several review processes to perfect the document
     - Once the document received its final modification, the __Document manager__ can accept the merge request from __feature__ to __dev__
-    - 👮 __Documentation managers__ creates new documentation releases by merging the __dev__ branch into the __main__ branch
-    - 👮 __Documentation managers__ creates new tag corresponding to the new version of the _documentation_ and document the new features added in this new tag
+    - __Documentation managers__ creates new documentation releases by merging the __dev__ branch into the __main__ branch
+    - __Documentation managers__ creates new tag corresponding to the new version of the _documentation_ and document the new features added in this new tag
 
 3. At the footer of each page, you can see the date of last modification, which facilitates identification of outdated documents. However, a system must be put in place in order to ensure that each document is being periodically reviewed. This can be done in the format of a markdown table on the index page of the documentation, containing for each document its date of last modification and its status :
 
 | Document                  | Date Last Modified | Up to date         |
 |---------------------------|--------------------|--------------------|
-| 11_externalsequencers.md  | 23/10/2023         | :heavy_check_mark: |
-| 12_internalsequencers.md  | 23/10/2023         | :heavy_check_mark: |
-| 21_wes_flow.md            | 05/11/2022         | :x:                |
-| 22_rnaseq_flow.md         | 25/12/2023         | :heavy_check_mark: |
-| 31_share_cluster_user.md  | 13/09/2023         | :heavy_check_mark: |
-| 32_share_external_user.md | 13/09/2023         | :heavy_check_mark: |
+| 11_externalsequencers.md  | 23/10/2023         | yes                |
+| 12_internalsequencers.md  | 23/10/2023         | yes                |
+| 21_wes_flow.md            | 05/11/2022         | no                 |
+| 22_rnaseq_flow.md         | 25/12/2023         | yes                |
+| 31_share_cluster_user.md  | 13/09/2023         | yes                |
+| 32_share_external_user.md | 13/09/2023         | yes                |
 
-This table should be edited by the 👮 __Documentation managers__ when releasing a new version of the _documentation_, and can be reviewed every month to check the status of each document.
+This table should be edited by the __Documentation managers__ when releasing a new version of the _documentation_, and can be reviewed every month to check the status of each document.
 
 4. The _documentation_ is always available on GitLab by members of the _Bioinformatic team_. They can access only the production release to use as documentation material.
 
-5. On the GitLab repository of the _documentation_, it would be a convention to create a tag and a release for every production version released. Going to this tag directory, you can see what changed for each released and what has been changed in which document. Everything can be traced back using commits. On the _documentation_ itself, you can also show which version you are currently browsin with the tag number, to be certain of what you are looking at.
+5. On the GitLab repository of the _documentation_, it would be a convention to create a tag and a release for every production version released. Going to this tag directory, you can see what changed for each released and what has been changed in which document. Everything can be traced back using commits. On the _documentation_ itself, you can also show which version you are currently browsing with the tag number, to be certain of what you are looking at.
 
-6. Only 👮 __Documentation managers__ can remove or modify the production documentation. Each modification (which includes deletion) must be reviewed twice before being actually effective in production. So there is a protection against accidental removals.
+6. Only __Documentation managers__ can remove or modify the production documentation. Each modification (which includes deletion) must be reviewed twice before being actually effective in production. First, a review is made from a __feature__ to the __dev__, and then an other review will be made from __dev__ to the __main__.
 
-7. Only members of the gitlab team can access the documentation.
+7. Only members of the gitlab team can access the documentation. 
 
 8. For each tag, you can access the version of the documentation at a certain time. So all is archived by default in an organized way.
 
