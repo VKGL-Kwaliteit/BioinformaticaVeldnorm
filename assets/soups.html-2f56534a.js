@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7b43ed6f","path":"/fieldnorm/soups.html","title":"SOUPS - Software of Unknown Provenance","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1709842205000},"filePathRelative":"fieldnorm/soups.md"}');export{e as data};

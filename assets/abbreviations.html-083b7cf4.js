@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6ae0b386","path":"/fieldnorm/abbreviations.html","title":"Abbreviations","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1709894114000},"filePathRelative":"fieldnorm/abbreviations.md"}');export{e as data};

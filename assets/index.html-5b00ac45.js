@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-196cfa1c","path":"/fieldnorm/","title":"Introduction","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1709893625000},"filePathRelative":"fieldnorm/index.md"}');export{e as data};

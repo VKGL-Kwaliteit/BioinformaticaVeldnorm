@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3582937b","path":"/fieldnorm/configuration_management.html","title":"Configuration management","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1699359251000},"filePathRelative":"fieldnorm/configuration_management.md"}');export{e as data};
