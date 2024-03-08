@@ -5,7 +5,7 @@ export const sidebarImport: SidebarConfig = {
     {
       text: 'Fieldnorm',
       children: [
-        '/fieldnorm/README.md',
+        '/fieldnorm/introduction.md',
         '/fieldnorm/control_of_documents.md',
         '/fieldnorm/software_life_cycle_processes.md',
         '/fieldnorm/verification_validation.md',
@@ -13,6 +13,7 @@ export const sidebarImport: SidebarConfig = {
         '/fieldnorm/feedback.md',
         '/fieldnorm/configuration_management.md',
         '/fieldnorm/soups.md',
+        '/fieldnorm/abbreviations.md',
         '/fieldnorm/references.md',
       ],
     },
