@@ -12,6 +12,7 @@ export const sidebarImport: SidebarConfig = {
         '/fieldnorm/risk_management.md',
         '/fieldnorm/feedback.md',
         '/fieldnorm/configuration_management.md',
+        '/fieldnorm/soups.md',
         '/fieldnorm/references.md',
       ],
     },
