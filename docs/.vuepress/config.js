@@ -44,5 +44,6 @@ export default defineUserConfig({
             // exclude the homepage
             isSearchable: (page) => page.path !== '/',
         }),
+        'vuepress-plugin-mermaidjs',
     ]
 })
