@@ -29,13 +29,13 @@ Laboratories should have a procedure in place to handle non-conforming work. Wet
 graph TD;
     A[Did the issue cause a wrong or missed diagnosis or unacceptable delay ?]-->B[yes];
     A-->D[no];
-    D-->X[perform impact analysis]
-    X-->Y[issue has high impact on diagnostic results]
-    X-->Z[issue has low impact on diagnostic results]
+    D-->X[Perform an impact analysis]
+    X-->Y[Issue has a high impact on diagnostic process]
+    X-->Z[Issue has a low impact on diagnostic process]
     Z-->G
     Y-->C[Is there a temporary work-around that fixes the issue without changes to the code ? ];
     B-->E[QMS report non-conforming work];
-    M-->F[hotfix / patch release];
+    M-->F[Create a hotfix / patch release to fix the issue];
     C-->I[no];
     C-->J[yes];
     J-->G[Fix the bug in future regular release];
