@@ -2,8 +2,8 @@
 
 In the past years bioinformatics has become a crucial part of several medical laboratories, such as Genetics, Pathology and Medical Microbiology. Hence, bioinformaticians need to comply to both the ISO-15189 and the IVDR.
 
-However, the ISO-15189 does not include specific requirements for bioinformatic or software development processes.
-Fortunately, the IEC-62304 exists, which is a harmonized standard about "Medical device software – Software life cycle processes".
+The ISO-15189 does not include specific requirements for bioinformatic or software development processes.
+The IEC-62304 is a harmonized standard about "Medical device software – Software life cycle processes" and can be used as a basis.
 Whilst the use of this standard remains voluntary, it nonetheless gives good guidance on how to achieve compliance with legal requirements.
 
 We therefore used the IEC-62304 as a guide to create a field standard for bioinformatics, in order to make sure that the software we create is developed and manufactured in accordance with state-of-the-art principles of development life cycle, risk management, including verification and validation, as required by the IVDR (Annex I, point 16). Note however, that we only focussed on the documentation needed for IEC-62304 Software Class A. <Hanneke's note: we need a separate page/subparagraph explaining these... and that whenever results from the pipeline are directly used in the clinic; hence, not seen by laboratory specialists, more documentation is needed, tried something with in/out of scope>
