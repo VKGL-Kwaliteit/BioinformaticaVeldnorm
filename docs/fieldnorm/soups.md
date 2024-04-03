@@ -4,10 +4,9 @@ Software of unknown provenance (SOUPS) is a software item that is already develo
 
 For each SOUP the following items should be registered:
 
-- Name: Name of SOUP.
-- Reference: Link (URL) to soup (source code / publication).
-- Intended purpose: Description of the original purpose of the SOUP.
-- Used according to the intended purpose: yes/no, if no, document for which purpose the SOUP is used.
-- Validation required: yes/no, often this is part of the validation of the (workflow) release itself. When using the SOUP outside of its intended purpose you need a proper validation to show that it works.
-- Version controlled: yes/no, is the SOUP developed under version control or not.
-- 
+-   Name: Name of SOUP.
+-   Reference: Link (URL) to soup (source code / publication).
+-   Intended purpose: Description of the original purpose of the SOUP.
+-   Used according to the intended purpose: yes/no, if no, document for which purpose the SOUP is used.
+-   Validation required: yes/no, often this is part of the validation of the (workflow) release itself. When using the SOUP outside of its intended purpose you need a proper validation to show that it works.
+-   Version controlled: yes/no, is the SOUP developed under version control or not.
