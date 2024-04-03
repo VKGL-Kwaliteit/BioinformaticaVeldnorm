@@ -37,7 +37,7 @@ Many of those tools, if used in a specific way, can allow _Bioinformaticians_ to
 
 ## Example case: The usage of GitLab
 
-### Central gathering of all SOP on Gitlab pages
+### Central gathering of all SOP on GitLab pages
 
 Here we provide an example how GitLab can be used as a _Bioinformaticians_ QMS. Using GitLab pages and MkDocs, you can easily create a well structured _documentation_ to store all your SOPs . Here are some guideline to illustrates the point of attention to comply with ISO-15189:
 
