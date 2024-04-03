@@ -2,14 +2,7 @@
 
 ## Bioinformaticians can benefit from a different QMS
 
-_Bioinformaticians_ work in a fairly different environment than other disciplines of the medical laboratory, and the classic Quality Management System (QMS) offered to biologists is often impractical for _Bioinformaticians_ needs. Here is a list of the features Bioinformaticians would like to have:
-
--   Code blocks can be copy/pasted safely, as opposed to standard QMS with a word or pdf format, which introduce erroneous changes on some special characters (such as "-").
--   Linking versions of the _documentation_ with the corresponding release number of the documented tool.
--   Let the _documentation_ update process be in the hands of _Bioinformaticians_ when changes in software must take place immediately, without getting in a stale review process when involving laboratory members.
--   Integration with a task management system to manage and track changes of the _documentation_.
-
-As specified in the ISO-15189, "Software procedures and related documentation needs to be controlled". This can be in any form or type of medium, as long as a certain set of requirements is achieved. Software is developed and distributed using version control systems, such as Git or GitLab. Those often offer extra functionalities related to code (e.g. linking a new release with a set of solved issues), which makes them good candidates to be a _Bioinformatician_ QMS system. In this document, we offer guidelines on how to comply to ISO-15189 while implementing a _Bioinformatician_ friendly QMS.
+_Bioinformaticians_ work in a fairly different environment than other disciplines of the medical laboratory, and the classic Quality Management System (QMS) offered to biologists is often impractical for _Bioinformaticians_ needs. As specified in the ISO-15189, "Software procedures and related documentation needs to be controlled". This can be in any form or type of medium, as long as a certain set of requirements is achieved. Software is developed and distributed using version control systems, such as Git or GitLab. Those often offer extra functionalities related to code (e.g. linking a new release with a set of solved issues), which makes them good candidates to be a _Bioinformatician_ QMS system. In this document, we offer guidelines on how to comply to ISO-15189 while implementing a _Bioinformatician_ friendly QMS.
 
 ## ISO norm requirements
 
