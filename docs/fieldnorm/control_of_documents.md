@@ -20,7 +20,7 @@ To allow for a _Bioinformatician_ friendly QMS while complying to the ISO-15189:
 
 ## Candidates for a Bioinformatician friendly QMS
 
-_Bioinformaticians_ create workflows collaboratively on a computer within a Git environment. Git is a distributed version control system that tracks changes in any set of computer files. This can be used to track the changes of the code itself, but also of its usage in Standard Operating Procedures (SOPs). Git comes in with a set of handy features, allowing to track issues and their resolution, or to identify each new release of a workflow and its newest features for example. As workflows often get upgraded and updated, their usage in SOP is susceptible to frequent changes as well. Examples of those documentations systems are:
+_Bioinformaticians_ create workflows collaboratively on a computer using version control software. Git is a distributed version control system that tracks changes in any set of computer files. This can be used to track the changes of the code itself, but also of its usage in Standard Operating Procedures (SOPs). Git comes in with a set of handy features, allowing to track issues and their resolution, or to identify each new release of a workflow and its newest features for example. As workflows often get upgraded and updated, their usage in SOP is susceptible to frequent changes as well. Examples of those documentations systems are:
 
 1. GitHub pages
 2. GitLab pages
