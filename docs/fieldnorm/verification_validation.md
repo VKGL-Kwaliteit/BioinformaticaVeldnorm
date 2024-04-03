@@ -45,7 +45,7 @@ In order to support the repeatability of the validation, the following must be r
 -   The evaluation of the test
 -   Conclusion of the test
 
-The person executing the test should be independent of the person who developed the software and wrote the validation. Software validation is preferably executed by an end user. For example, someone from the laboratory when the end result is mostly used by the laboratory, or a bioinformatician when bioinformatics expertise is needed for performing the validation.
+Software validation tests should be executed by an end user and preferably independent from the person who developed and wrote the software. For example, someone from the laboratory when the end result is mostly used by the laboratory, or a bioinformatician when bioinformatics expertise is needed for performing the validation.
 
 ISO-15189 states that the validation shall be as extensive as is necessary and confirm, through the provision of objective evidence in the form of performance specifications, that the specific requirements for the intended use of the examination have been fulfilled. This indicates that depending on the amount of changes of the new release, the validation could be any length. Sometimes a single note could be enough. For example, for a hotfix where the paths are now correctly stated, a note saying "tested in the first production run, the result files are now saved in the corrected path". Or “Only an integration test has been performed due to a change of a parameter. There were no issues with the first analysis”. There should always be a record of the validation.
 
