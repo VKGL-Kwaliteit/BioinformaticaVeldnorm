@@ -62,14 +62,16 @@ The development stage will be the bulk of a project; here, code is created that 
 
 1. A decentralized code management system, such as Git, together with a centralized repository, such as GitHub, GitLab, or Bitbucket.
 2. A task management system seamlessly integrated with your Git development system to track and manage development tasks.
+3. Conducting code reviews, this enforce colleagues to have a look and understand what the code is doing and whether coding guidelines are followed.
 
-The following processes are strongly recommended: 
-3. A well-defined development and release cycle with set time periods for preparation, development, testing, and releasing. This allows multiple developers to work cohesively on the project and creates structured testing and release moments during the implementation and maintenance processes. It also enables ample opportunities for user reflection on the deliverables during the lifetime of projects. 
-4. Writing code with unit tests. Moreover, conducting regular code reviews is highly recommended. (HvD<- code review is a must, and is part of verification) These methods will be invaluable during software maintenance, testing, and release. It enables a wider understanding of parts of the code, as unit tests often embody general usage as well as very specific exceptions, and code reviews enforce colleagues to have a look and understand what your code is doing.
+The following processes are strongly recommended:    
+3. A well-defined development and release cycle with set time periods for preparation, development, testing, and releasing. This allows multiple developers to work cohesively on the project and creates structured testing and release moments during the implementation and maintenance processes. It also enables ample opportunities for user reflection on the deliverables during the lifetime of projects.   
+4. Writing code with unit tests, see [Software Verification & Software Validation](verification_validation.md). This enables a wider understanding of parts of the code, as unit tests often embody general usage as well as very specific exceptions.   
+
 
 ## 5. Testing
 
-Before implementation, software should be extensively tested, verified, and validated. While ISO 15189 does not provide specific guidelines on how to conduct software validation, it emphasizes the importance of ensuring that software is validated and verified following recognized industry standards. Software validation and verification should be performed in accordance to this document [Software Verification & Software Validation](verification_validation.md).
+Before implementation, software should be extensively tested, verified, and validated. While ISO-15189 does not provide specific guidelines on how to conduct software validation, it emphasizes the importance of ensuring that software is validated and verified following recognized standards. Software verification and validation should be performed in accordance to this document [Software Verification & Software Validation](verification_validation.md).
 
 ## 6. Implementation
 
@@ -82,10 +84,10 @@ Once everything is ready, there are a few key processes that should be included 
 
 ## 7. Maintenance
 
-Maintenance primarily centers around fixing bugs, monitoring the software, introducing new features, and upgrading to newer versions with new requirements. The process follows the same procedures as the development, testing, and implementation phases. Only certain maintenance processes that deviate from the normal procedures for development, testing, and implementation should be documented (hotfixes, for example).
+Maintenance primarily centers around fixing bugs, monitoring the software, introducing new features, and upgrading to newer versions with new requirements. The process follows the same procedures as the development, testing, and implementation phases. Only certain maintenance processes that deviate from the normal procedures for development, testing, and implementation should be documented (such as hotfixes).
 
 ## Hotfixes
 
-Hotfixes are updates which are directly uploaded in to the actual live software without going through the development, testing and implementation phases of the SDLC. They are meant as a quick way to fix unforeseen but process breaking bugs. In general, having well-defined development, testing and implementation processes would negate the need for hotfixes. However, there is always the possibility for bugs to occur. The laboratory should have clear guidelines on how and when hotfixes are performed.
+Hotfixes are updates which are directly uploaded in to the actual live software without going through the development, testing and implementation phases of the SDLC. They are meant as a quick way to fix unforeseen but process breaking bugs. In general, having well-defined development, testing and implementation processes would negate the need for hotfixes. However, there is always the possibility for bugs to occur, or for interactions with other (third party) software to change. The process of performing a hotfix should be documented. 
 
 > _Note: hotfixes could be classified as non-conforming work and might need to be followed up through the laboratories QMS, more on this in [user feedback](feedback.md)_
