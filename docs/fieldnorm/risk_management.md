@@ -1,8 +1,8 @@
 # Risk management
 
-Given the dynamic nature of bioinformatic software, the risk management documentation of bioinformatic software needs more frequent revisions compared to that of tests in the laboratory. Consequently, maintaining two distinct documents — one for the laboratory and another for bioinformatics — could optimize the risk management process.
+Given the dynamic nature of bioinformatic software, the risk management documentation of bioinformatic software needs more frequent revisions compared to that of tests in the medical laboratory. Consequently, maintaining two distinct documents — one for the laboratory and another for bioinformatics — could optimize the risk management process.
 
-The bioinformatics risk assessment should integrate with the laboratory risk management procedure, which can use the existing method described in the laboratories QMS, such as SAFER (Safety Assurance Factors for EHR Resilience) or FMEA (Failure Modes and Effects Analysis). In the scenario where the bioinformatics team opts for an alternative approach, this alternative approach needs to be documented.
+The bioinformatics risk assessment should integrate with the laboratory risk management procedure, which can use the existing method described in the laboratories QMS, such as SAFER (Stop, Assess, Formulate, Execute, and Review) or FMEA (Failure Modes and Effects Analysis). In the scenario where the bioinformatics team opts for an alternative approach, this alternative approach needs to be documented.
 
 Often, bioinformatics software is a part of the laboratory test, hence it should be clear which part of the laboratory test is covered by the bioinformatics risk management. For instance, for sequencing the bioinformatics risk management starts with the initial sequencer output and ends with the storage of results.
 
@@ -39,5 +39,5 @@ In conclusion, risk management within the software life cycle processes is an it
 
 -   ISO-14971, Annex C Questions that can be used to identify medical device characteristics that could impact on safety
 -   ISO-22367, Annex D Identification of characteristics related to safety
--   IEC-62304
+-   IEC-62304 Medical device software – software life cycle processes
 -   IMDRF/SaMD WG/N12FINAL:2014 "Software as a Medical Device": Possible Framework for Risk Categorization and Corresponding Consideration
