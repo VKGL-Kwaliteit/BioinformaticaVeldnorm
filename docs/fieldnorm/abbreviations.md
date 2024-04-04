@@ -9,6 +9,7 @@
 -   ISO: International Organization for Standardization
 -   IVDR: In Vitro Diagnostics Regulation
 -   MDR: Medical Device Regulation
+-   MDSW: Medical Device SoftWare
 -   QMS: Quality Management System
 -   SAFER: Stop, Assess, Formulate, Execute, and Review
 -   SaMD: Software as a Medical Device
