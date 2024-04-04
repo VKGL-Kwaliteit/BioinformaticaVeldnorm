@@ -2,18 +2,22 @@
 
 ## Bioinformaticians can benefit from a different QMS
 
-_Bioinformaticians_ work in a fairly different environment than other disciplines of the medical laboratory, and the classic Quality Management System (QMS) offered to biologists is often impractical for _Bioinformaticians_ needs. Here is a list of the features Bioinformaticians would like to have :
+_Bioinformaticians_ work in a fairly different environment than other disciplines of the medical laboratory, and the classic Quality Management System (QMS) used by the medical laboratory is often impractical for _Bioinformaticians_ needs. 
+
+Features that would benefit Bioinformaticians are:
 
 - Code blocks can be copy/pasted safely, as opposed to standard QMS with a word or pdf format, which introduce erroneous changes on some special characters (such as "-")
 - Linking versions of the _documentation_ with the corresponding release number of the documented tool
 - Let the _documentation_ update process be in the hands of _Bioinformaticians_ when changes in software must take place immediately, without getting in a stale review process when involving laboratory members
 - Integration with a task management system to manage and track changes of the _documentation_
 
-As specified in the ISO-15189, "Software procedures and related documentation needs to be controlled". This can be in any form or type of medium, as long as a certain set of requirements is achieved. Softwares are developped and distributed using version control systems, such as git or gitlab. Those often offer extra functionalities related to code (e.g. : linking a new release with a set of solved issues), which makes them good candidates to be a _Bioinformatician_ QMS system. In this document, we offer guidelines on how to comply to ISO-15189 while implementing a _Bioinformatician_ friendly QMS. 
+As specified in the ISO-15189, "Software procedures and related documentation needs to be controlled". This can be in any form or type of medium, as long as a certain set of requirements is achieved. Software is generally developed and distributed using version control systems, such as git or gitlab. Those often offer extra functionalities related to code (e.g. : linking a new release with a set of solved issues), which makes them good candidates to be a _Bioinformatics_ QMS system. In this document, we offer guidelines on how to comply to ISO-15189 while implementing a _Bioinformatics_ friendly QMS. 
 
-## ISO norm requirements
+Note that, documentation outside of the medical laboratories QMS should be traceable, i.e. references need to be made to the _Bioinformatics_ QMS where applicable. 
 
-To allow for a _Bioinformatician_ friendly QMS while complying to the ISO-15189:2022 requirements, the following aspects need to be considered and documented :
+## ISO-15189 requirements
+
+To allow for a _Bioinformatics_ friendly QMS while complying to the ISO-15189:2022 requirements, the following aspects need to be considered and documented :
 
 1. Documents are uniquely identified
 2. Documents are approved for adequacy before issue by authorized personnel who have the expertise and competence to determine adequacy
@@ -25,23 +29,25 @@ To allow for a _Bioinformatician_ friendly QMS while complying to the ISO-15189:
 8. The unintended use of obsolete documents is prevented, and suitable identification is applied to them if they are retained for any purpose
 9. One paper or electronic copy of each obsolete controlled document is retained for a specified time period or in accordance with applicable specified requirements
 
-## Candidates for a Bioinformatician friendly QMS
+## Candidates for a Bioinformatics friendly QMS
 
-_Bioinformaticians_ create workflows collaboratively on a computer within a git environment. Git is a distributed version control system that tracks changes in any set of computer files. This can be used to track the changes of the code itself, but also of its usage in Standard Operating Procedures (SOPs). Git comes in with a set of handy features, allowing to track issues and their resolution, or to identify each new release of a workflow and its newest features for example. As workflows often get upgraded and updated, their usage in SOP is susceptible to frequent changes as well. Examples of those documentations systems are:
+_Bioinformaticians_ create workflows collaboratively on a computer within a git environment. Git is a distributed version control system that tracks changes in any set of computer files. This can be used to track the changes of the code itself, and can also be used to track changes in Standard Operating Procedures (SOPs). Git offers a set of interesting features, for example, it allows to track issues and their resolution, and it identifies each new release with its newest features. As workflows often get upgraded and updated, the corresponding SOPs are subject to frequent changes as well. 
+
+Examples of git based systems are:
 
 1. Github pages
 2. Gitlab pages
 3. Confluence
 
-Many of those tools, if used in a specific way, can allow _Bioinformaticians_ to work in a comfortable environement, while complying to the ISO norms requirements. They are of course multiple ways to implement such a system, and as long as it is documented how your system complies to the ISO-15189 requirements, all is well. If you are looking for some inspirations, in the next paragraph we will describe an example on how to use one this tool to follow the ISO requirements for both controlling the workflows/software you develop, and their associated documentation/SOP.
+Many of these tools, if used in a specific way, can allow _Bioinformaticians_ to work in a comfortable environment, while complying to the ISO-15189 requirements. There are multiple ways to implement such a system, and as long as it is documented how your system complies to the ISO-15189 requirements, all is well. 
 
-## Example case : The usage of GitLab
+## Example: The usage of GitLab as QMS
 
 ### Central gathering of all SOP on Gitlab pages
 
- Here we provide an example how GitLab can be used as a _Bioinformaticians_ QMS. Using gitlab pages and mkdocs, you can easily create a well structured _documentation_ to store all your SOPs . Here are some guideline to illustrates the point of attention to comply with ISO-15189 :
+Using gitlab pages and mkdocs, you can easily create a well structured QMS to store all your SOPs. Here we illustrate how Gitlab complies to the ISO-15189 requirements:
 
-1. Each SOP becomes a markdown file. Its name will include a number for easy and unique identification of the document. The numbering can also be used to classify each SOP into categories. _Example_ :
+1. Each SOP is a markdown file. Its name will include a number for easy and unique identification of the document. The numbering can also be used to classify each SOP into categories. _Example_ :
    
 - 10 - Data Access
     - 11 - ExternalSequencers -> 11_externalsequencers.md
@@ -53,7 +59,7 @@ Many of those tools, if used in a specific way, can allow _Bioinformaticians_ to
     - 31 - Cluster -> 31_share_cluster_user.md
     - 32 - External -> 32_share_external_user.md      
 
- Here we seperate 3 flows in categories : accessing data, processing data and sharing data, allowing intuitive navigation within your documentation depending on the action you are trying to perform.
+ In this example, categories are used to seperate 3 flows: accessing data, processing data and sharing data, allowing intuitive navigation within the documentation depending on the action you are trying to perform.
 
 2. The repository is set with special users type permissions and structure :
     - In a git way, a __"main"__ branch corresponds to the __"production"__ _documentation_, and a __"dev"__ branch mirrors the main branch at first, and will then accumulates modifications that needs to appear in the upcoming release of the _documentation_
@@ -76,11 +82,11 @@ Many of those tools, if used in a specific way, can allow _Bioinformaticians_ to
 | 31_share_cluster_user.md  | 13/09/2023         | yes                |
 | 32_share_external_user.md | 13/09/2023         | yes                |
 
-This table should be edited by the __Documentation managers__ when releasing a new version of the _documentation_, and can be reviewed every month to check the status of each document.
+This table should be edited by the __Documentation managers__ when releasing a new version of the _documentation_, and can be reviewed periodically to check the status of each document.
 
-4. The _documentation_ is always available on GitLab by members of the _Bioinformatic team_. They can access only the production release to use as documentation material.
+4. The _documentation_ is always available on GitLab by members of the _Bioinformatics team_. They can access only the production release.
 
-5. On the GitLab repository of the _documentation_, it would be a convention to create a tag and a release for every production version released. Going to this tag directory, you can see what changed for each released and what has been changed in which document. Everything can be traced back using commits. On the _documentation_ itself, you can also show which version you are currently browsing with the tag number, to be certain of what you are looking at.
+5. On the GitLab repository of the _documentation_, it would be a convention to create a tag and a release for every production version released. Going to this tag directory, you can see what changed for each release and hence for each document. Everything can be traced back using commits. On the _documentation_ itself, you can also show which version you are currently browsing with the tag number, to be certain of what you are looking at.
 
 6. Only __Documentation managers__ can remove or modify the production documentation. Each modification (which includes deletion) must be reviewed twice before being actually effective in production. First, a review is made from a __feature__ to the __dev__, and then an other review will be made from __dev__ to the __main__.
 
