@@ -22,7 +22,7 @@ Hence, for each release _Software verification_ **and** _Software validation_ is
 
 The IEC-62304 mentions different aspects of verification; i.e. software unit verification and software integration testing, and validation; i.e. software system test.
 
-Testing whether the code is correctly developed can be done on different levels, such as:
+Testing whether the code is correctly developed should be done on different levels, such as:
 
 -   Code reviews
 -   Unit testing
