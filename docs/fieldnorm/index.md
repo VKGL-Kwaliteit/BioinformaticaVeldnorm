@@ -23,5 +23,16 @@ While we were writing this field standard, it became clear to us that the size o
 -   Personnel (6.2 in ISO-15189:2022), as this should be covered by QMS of the medical Laboratory already.
 -   Datamanagement and retention periods of data are mentioned in another field standard ^[reference].
 
-## Classication according to the IEC-62304
-![Software Safety Classes^reference](IEC-62304-Software-Safety-Classes.png "Software Safety Classes")
+## Software Safety Classication according to the IEC-62304
+
+The SOFTWARE SYSTEM is software safety class A if:   
+the SOFTWARE SYSTEM cannot contribute to a HAZARDOUS SITUATION; or
+the SOFTWARE SYSTEM can contribute to a HAZARDOUS SITUATION which does not result in unacceptable RISK after consideration of RISK CONTROL measures external to the SOFTWARE SYSTEM.
+
+The SOFTWARE SYSTEM is software safety class B if:   
+the SOFTWARE SYSTEM can contribute to a HAZARDOUS SITUATION which results in unacceptable RISK after consideration of RISK CONTROL measures external to the SOFTWARE SYSTEM and the resulting possible HARM is non-SERIOUS INJURY.
+
+The SOFTWARE SYSTEM is software safety class C if:   
+the SOFTWARE SYSTEM can contribute to a HAZARDOUS SITUATION which results in unacceptable RISK after consideration of RISK CONTROL measures external to the SOFTWARE SYSTEM and the resulting possible HARM is death or SERIOUS INJURY“
+
+![Software Safety Classes^reference](img/IEC-62304-Software-Safety-Classes.png "Software Safety Classes")
