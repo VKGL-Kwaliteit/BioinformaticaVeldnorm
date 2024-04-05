@@ -15,6 +15,7 @@ export const sidebarImport: SidebarConfig = {
         '/fieldnorm/soups.md',
         '/fieldnorm/abbreviations.md',
         '/fieldnorm/references.md',
+        '/fieldnorm/contact.md',
       ],
     },
   ]
