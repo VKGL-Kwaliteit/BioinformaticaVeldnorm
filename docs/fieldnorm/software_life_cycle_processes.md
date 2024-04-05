@@ -38,7 +38,7 @@ The bioinformatics team should have a standardized and documented approach for g
 
 Guidelines should support the following processes to gather, convert, track, and update the requirements during a project:
 
-1. Collaboration when defining software requirements: Requirements can come from end-users, bioinformaticians and other stakeholders. Requirements should be discussed with the stakeholders before adding, removing or altering them. (HvD: this is not always feasible, and creates more work if we need to discuss every single one of them!)
+1. Collaboration when defining software requirements: Requirements can come from end-users, bioinformaticians and other stakeholders. Requirements should be discussed with the relevant stakeholders before adding, removing or altering them.
 2. Conversion of users' requirements into small, individual development tasks.
 3. An agreed-upon system to track requirements throughout the development process (e.g. in JIRA, Confluence, Azure DevOps, GitHub or GitLab).
 4. A plan for keeping in touch with end users throughout the different stages of the development process to avoid unexpected adjustments to requirements later on.
