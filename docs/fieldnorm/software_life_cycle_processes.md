@@ -1,7 +1,3 @@
-<style>
-    ol { list-style-type: lower-alpha; }
-</style>
-
 # Software Development Life Cycle processes
 
 One of the main responsibilities of bioinformaticians working in a medical laboratory involves the development and maintenance of software used in diagnostic processes. The IEC-62304 description of the software development life cycle (SDLC) is consistent with the practices of most software-centric entities. SDLC processes that are commonly used include planning, requirements, architectural design, development, testing, deployment, and maintenance. Laboratories should establish documented guidelines that cover all SDLC these stages.
