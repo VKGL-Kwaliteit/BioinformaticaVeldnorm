@@ -1,14 +1,14 @@
 # Risk management
 
-Given the dynamic nature of bioinformatic software, the risk management documentation of bioinformatic software needs more frequent revisions compared to that of tests in the medical laboratory. Consequently, maintaining two distinct documents — one for the laboratory and another for bioinformatics — could optimize the risk management process.
+Both the ISO-15189 and the IVDR ask for risk management. The ISO-15189 requires risk management of the bioinformatics processes, e.g. SDLC, use of github, compute cluster, storage. The IVDR requires risk management of the in-house IVDs, hence all in-house developed software, e.g. analysis software. 
 
-The bioinformatics risk assessment should integrate with the laboratory risk management procedure, which can use the existing method described in the laboratories QMS, such as SAFER (Stop, Assess, Formulate, Execute, and Review) or FMEA (Failure Modes and Effects Analysis). In the scenario where the bioinformatics team opts for an alternative approach, this alternative approach needs to be documented.
+The bioinformatics risk assessment should integrate with the laboratory risk management procedure, which can use the existing method described in the laboratories QMS, such as SAFER (Stop, Assess, Formulate, Execute, and Review) or FMEA (Failure Modes and Effects Analysis). 
 
-Often, bioinformatics software is a part of the laboratory test, hence it should be clear which part of the laboratory test is covered by the bioinformatics risk management. For instance, for sequencing the bioinformatics risk management starts with the initial sequencer output and ends with the storage of results.
+The risk management of bioinformatics processes and developed software should mention how often the risk analysis should be updated. While the bioinformatics processes could follow the medical laboratories revision period, it is recommended to revise the risk analysis for each release of software. Consequently, the risk analysis of developed software needs more frequent revision compared to that of tests in the medical laboratory. Maintaining two distinct documents — one for the laboratory test and another for bioinformatics software — could optimize the risk management process. As bioinformatics software is a part of the laboratory test, it should be clear which part of the laboratory test is covered by the bioinformatics risk analysis. For instance, for sequencing the bioinformatics risk analysis starts with the initial sequencer output and ends with the storage of results.
 
-## Risk Management in Software Life Cycle Processes
+## Risk Management in Software Development Life Cycle
 
-Risk management is part of the software life cycle process and is required for every (standalone) pipeline/workflow or software tool validated for diagnostics use. Risk management can be broken down into 6 steps, where step 2 and 3 should be part of the laboratories QMS. When the bioinformatics team opts for an alternative approach, step 2 and 3 need to be documented.
+Risk management is part of the SDLC and is required for every (standalone) pipeline/workflow or software tool validated for diagnostics use. Risk management can be broken down into 6 steps, where step 2 and 3 should be part of the laboratories QMS. 
 
 1. Risk Identification involves a comprehensive analysis of risk factors such as project scope, requirements, technology stack, resource availability, and external dependencies.
    Typically, bioinformatics risks involve topics like:
@@ -29,11 +29,11 @@ Risk management is part of the software life cycle process and is required for e
     - Decrease impact by having backup system in place, for example a temporary compute environment.
     - Decrease likelihood by providing clear instruction to end users.
 
-4. Monitoring and Control: Throughout the software life cycle, continuous monitoring of identified risks and the effectiveness of mitigation strategies is crucial. Often risks are already identified and discussed during development, whether these are all documented depends on the risks.
+4. Monitoring and Control: Throughout the SDLC, continuous monitoring of identified risks and the effectiveness of mitigation strategies is crucial. Often risks are already identified and discussed during development, whether these are all documented depends on the risks.
 5. Communication and Documentation: Clear communication of risks, mitigation strategies, and their progress is vital among team members, stakeholders. Comprehensive documentation of identified risks, their assessment, and the implemented mitigation measures aids in transparency and knowledge transfer, ensuring a cohesive approach.
 6. Adaptation to Change: Risks and their measures may evolve over time. Risks can be reassessed, and new ones may emerge. It is imperative that risk assessments maintain their relevance throughout the software life cycle. Therefore, risk management strategies should be flexible to accommodate changes and updates, and should contain a specific update interval. It is recommended to set this reevaluation interval to every major-minor software version and/or two times per year.
 
-In conclusion, risk management within the software life cycle processes is an iterative and proactive approach to ensure the successful release of software projects while minimizing the impact of potential uncertainties.
+In conclusion, risk management within the SDLC is an iterative and proactive approach to ensure the successful release of software projects while minimizing the impact of potential uncertainties.
 
 ## More documentation
 
