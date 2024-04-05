@@ -1,4 +1,4 @@
-<style type="text/css">
+<style>
     ol { list-style-type: lower-alpha; }
 </style>
 
@@ -38,9 +38,9 @@ The bioinformatics team should have a standardized and documented approach for g
 
 Guidelines should support the following processes to gather, convert, track, and update the requirements during a project:
 
-1. Collaboration when defining software requirements: Requirements can come from end-users, bioinformaticians and other stakeholders. Requirements should be discussed with the stakeholders before adding, removing or altering them. (HvD: this is not always feasable, and creates more work if we need to discuss every single one of them!)
+1. Collaboration when defining software requirements: Requirements can come from end-users, bioinformaticians and other stakeholders. Requirements should be discussed with the stakeholders before adding, removing or altering them. (HvD: this is not always feasible, and creates more work if we need to discuss every single one of them!)
 2. Conversion of users' requirements into small, individual development tasks.
-3. An agreed-upon system to track requirements throughout the development process (e.g. in JIRA, Confluence, Azure DevOps, or GitHub/GitLab).
+3. An agreed-upon system to track requirements throughout the development process (e.g. in JIRA, Confluence, Azure DevOps, GitHub or GitLab).
 4. A plan for keeping in touch with end users throughout the different stages of the development process to avoid unexpected adjustments to requirements later on.
 
 The requirements may (and are likely to) change during the process, however, it is encouraged to evaluate if the project is still in line with the original requirements, so that 'scope creep' is prevented. A widely adopted software development strategy involves dividing a development project over several periods. It is advised to use an approach that enables the release of partial deliverables to users each period, which enables user feedback upon each deliverable during the entire lifetime of the project and provides ample opportunities for clarification and adaptation.
@@ -62,7 +62,7 @@ The development stage will be the bulk of a project; here, code is created that 
 
 1. A decentralized code management system, such as Git, together with a centralized repository, such as GitHub, GitLab, or Bitbucket.
 2. A task management system seamlessly integrated with your Git development system to track and manage development tasks.
-3. Conducting code reviews, this enforce colleagues to have a look and understand what the code is doing and whether coding guidelines are followed.
+3. Conducting code reviews, this enforces colleagues to have a look and understand what the code is doing and whether coding guidelines are followed.
 
 The following processes are strongly recommended:    
 3. A well-defined development and release cycle with set time periods for preparation, development, testing, and releasing. This allows multiple developers to work cohesively on the project and creates structured testing and release moments during the implementation and maintenance processes. It also enables ample opportunities for user reflection on the deliverables during the lifetime of projects.   
