@@ -15,7 +15,7 @@ The following people were involved with writing and reviewing.
 **Thomas Leenders**, Department of Human Genetics, Radboud University Medical Center, Nijmegen, the Netherlands\
 **Rick Medemblik**, Department of Human Genetics, Amsterdam University Medical Center, Amsterdam, the Netherlands\
 **Pieter Neerincx**, Department of Genetics, University Medical Center Groningen, Groningen, the Netherlands\
-**Ruben H.P. Vorderman**, Department of Biomedical Data Sciences, Leiden University Medical Center, Leiden, the Netherlands\
+**Ruben H.P. Vorderman**, Department of Biomedical Data Sciences, Leiden University Medical Center, Leiden, the Netherlands
 
 You can provide feedback for this field standard, or leave comments or suggestions for improvement by filing an [issue](https://github.com/VKGL-Kwaliteit/BioinformaticaVeldnorm/issues), which is open to everybody.
 
