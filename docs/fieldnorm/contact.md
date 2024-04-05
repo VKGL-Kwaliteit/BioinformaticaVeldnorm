@@ -6,16 +6,16 @@ Bioinformaticians from all the genetic medical laboratories in the Netherlands g
 
 The following people were involved with writing and reviewing.
 
-**Tobias Beers**, Department of Pathology, Antoni van Leeuwenhoek – Netherlands Cancer Institute (AvL-NKI), Amsterdam, the Netherlands
-**Roxane E. Boyer**, Department of Human Genetics, Amsterdam University Medical Center, Amsterdam, the Netherlands
-**Hanneke W. M. van Deutekom**, Department of Genetics, University Medical Center Utrecht, Utrecht, the Netherlands
-**Robert F. Ernst**, Department of Genetics, University Medical Center Utrecht, Utrecht, the Netherlands
-**Geert Geeven**, Department of Clinical Genetics, Erasmus MC, University Medical Center Rotterdam, Rotterdam, the Netherlands
-**Bart de Koning**, Department of Clinical Genetics, Maastricht University Medical Center+, Maastricht, the Netherlands
-**Thomas Leenders**, Department of Human Genetics, Radboud University Medical Center, Nijmegen, the Netherlands
-**Rick Medemblik**, Department of Human Genetics, Amsterdam University Medical Center, Amsterdam, the Netherlands
-**Pieter Neerincx**, Department of Genetics, University Medical Center Groningen, Groningen, the Netherlands
-**Ruben H.P. Vorderman**, Department of Biomedical Data Sciences, Leiden University Medical Center, Leiden, the Netherlands
+**Tobias Beers**, Department of Pathology, Antoni van Leeuwenhoek – Netherlands Cancer Institute (AvL-NKI), Amsterdam, the Netherlands\
+**Roxane E. Boyer**, Department of Human Genetics, Amsterdam University Medical Center, Amsterdam, the Netherlands\
+**Hanneke W. M. van Deutekom**, Department of Genetics, University Medical Center Utrecht, Utrecht, the Netherlands\
+**Robert F. Ernst**, Department of Genetics, University Medical Center Utrecht, Utrecht, the Netherlands\
+**Geert Geeven**, Department of Clinical Genetics, Erasmus MC, University Medical Center Rotterdam, Rotterdam, the Netherlands\
+**Bart de Koning**, Department of Clinical Genetics, Maastricht University Medical Center+, Maastricht, the Netherlands\
+**Thomas Leenders**, Department of Human Genetics, Radboud University Medical Center, Nijmegen, the Netherlands\
+**Rick Medemblik**, Department of Human Genetics, Amsterdam University Medical Center, Amsterdam, the Netherlands\
+**Pieter Neerincx**, Department of Genetics, University Medical Center Groningen, Groningen, the Netherlands\
+**Ruben H.P. Vorderman**, Department of Biomedical Data Sciences, Leiden University Medical Center, Leiden, the Netherlands\
 
 You can provide feedback for this field standard, or leave comments or suggestions for improvement by filing an [issue](https://github.com/VKGL-Kwaliteit/BioinformaticaVeldnorm/issues), which is open to everybody.
 
