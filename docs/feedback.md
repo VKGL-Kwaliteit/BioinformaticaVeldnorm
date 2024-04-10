@@ -25,7 +25,7 @@ Examples of systems that may be used (together) to collect and record feedback a
 Laboratories should have a procedure in place to handle non-conforming work. Whether bugs or issues with Bioinformatics software need to be handled as non-conforming work will depend on the magnitude, impact and the occurrence (or probability / frequency of recurrence) of the issue in the diagnostic process. The following flow-chart will help to evaluate the severity of the issue in terms of these three criteria and gives guidance on the best course of action in handling the issue
 
 ```mermaid
-graph TD;
+graph TD
     A[Did the issue cause a wrong or missed diagnosis or unacceptable delay ?]-->B[yes];
     A-->D[no];
     D-->X[Perform an impact analysis]
@@ -42,5 +42,4 @@ graph TD;
     K-->L[no]
     K-->M[yes]
     L-->E
-
 ```

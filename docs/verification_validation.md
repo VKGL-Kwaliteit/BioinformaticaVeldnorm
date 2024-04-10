@@ -4,12 +4,12 @@ _Software verification_ and _Software validation_ is necessary to ensure clinica
 
 The following citation is taken from IMDRF/SaMD WG/N23 FINAL:2015 "Software as a Medical Device (SaMD): Application of Quality Management System "
 
-> ### Verification and Validation
->
-> The verification and validation (V&V) activities should be targeted towards the criticality and impact to patient safety of the SaMD, as discussed in IMDRF/SaMD WG/N12.
-> Typically, verification (providing assurance that the design and development activity at each development stage conforms to the requirements) and validation
-> (providing reasonable confidence that the software meets its intended use/user needs and operational requirements) activities ensure that all elements from the SaMD design
-> and development—including any changes made during maintenance/upgrades—have been implemented correctly and that objective evidence of this implementation is recorded.
+!!! quote "Verification and Validation"
+
+    The verification and validation (V&V) activities should be targeted towards the criticality and impact to patient safety of the SaMD, as discussed in IMDRF/SaMD WG/N12.
+    Typically, verification (providing assurance that the design and development activity at each development stage conforms to the requirements) and validation
+    (providing reasonable confidence that the software meets its intended use/user needs and operational requirements) activities ensure that all elements from the SaMD design
+    and development—including any changes made during maintenance/upgrades—have been implemented correctly and that objective evidence of this implementation is recorded.
 
 In short, Barry Boehm expressed the difference between the software verification and software validation as follows:
 
@@ -51,24 +51,26 @@ ISO-15189 states that the validation shall be as extensive as is necessary and c
 
 Depending on the changes in the software, and in particular for the first version of the software a performance evaluation is needed. MDCG 2020-1 (Guidance on Clinical Evaluation (MDR) / Performance Evaluation (IVDR) of Medical Device Software) could help in determining the extend of the validation and/or the number of samples needed. Note that, this guidance helps with Chapter VI of the IVDR, which is not mentioned in article 5.5 for in house developed tests, but could give guidance to define the extend of your validation. For example the following points taken from MDCG 2020-1.
 
-> ### Sufficient amount
->
-> -   Does the data support the intended use, indications, target groups, clinical claims and
->     contraindications?
-> -   Have the clinical risks and analytical performance/clinical performance been investigated?
-> -   Have relevant MDSW’s characteristics, such as the data input and output, the applied algorithms
->     or type of interconnection been considered when generating the data to support the performance of
->     the device?
-> -   What is the grade of innovation/history on the market (how big is the body of scientific evidence)?
-> -   Other, as applicable.
->
-> ### Sufficient quality
->
-> -   Were the type and the design of the study/test appropriate to meet the research objectives?
-> -   Was the data set appropriate and actual (state of the art)?
-> -   Was the statistical approach appropriate to reach a valid conclusion?
-> -   Were all ethical, legal and regulatory considerations/requirements taken into account?
-> -   Is there any conflict of interest?
+!!! quote
+
+    ### Sufficient amount
+
+    -   Does the data support the intended use, indications, target groups, clinical claims and
+        contraindications?
+    -   Have the clinical risks and analytical performance/clinical performance been investigated?
+    -   Have relevant MDSW’s characteristics, such as the data input and output, the applied algorithms
+        or type of interconnection been considered when generating the data to support the performance of
+        the device?
+    -   What is the grade of innovation/history on the market (how big is the body of scientific evidence)?
+    -   Other, as applicable.
+
+    ### Sufficient quality
+
+    -   Were the type and the design of the study/test appropriate to meet the research objectives?
+    -   Was the data set appropriate and actual (state of the art)?
+    -   Was the statistical approach appropriate to reach a valid conclusion?
+    -   Were all ethical, legal and regulatory considerations/requirements taken into account?
+    -   Is there any conflict of interest?
 
 For Human Genetics, specific GIAB samples are used for performance evaluation. In general, depending on the intended purpose of the software, several specific samples can be selected to validate the software. For updated tools, one could use the previously validated results for comparison. For new tools, one could choose to validate the outcome by eye, for example in IGV.
 
