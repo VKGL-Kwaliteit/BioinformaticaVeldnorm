@@ -95,7 +95,7 @@ Some handies (feel free to add if you like more):
 
 #### Test your additions
 
-To start the development version first navigate to the project folder. Next run the pnpm command:
+To start the development version first navigate to the project folder. Next run the command:
 
 ```bash
 poetry run mkdocs serve
