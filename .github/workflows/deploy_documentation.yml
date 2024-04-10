@@ -40,6 +40,6 @@ jobs:
         pip install poetry
         poetry install
 
-    # - name: Build and Deploy MkDocs
-    #   run: |
-    #     poetry run mkdocs gh-deploy --force
+    - name: Build and Deploy MkDocs
+      run: |
+        poetry run mkdocs gh-deploy --force
