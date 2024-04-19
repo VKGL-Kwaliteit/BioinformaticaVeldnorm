@@ -4,7 +4,7 @@
 
 Bioinformaticians work in a fairly different environment than other disciplines of the medical laboratory, and the classic Quality Management System (QMS) used by the medical laboratory is often impractical for Bioinformaticians' needs. ISO-15189 specifies: "Software procedures and related documentation need to be controlled". This can be in any form or type of medium, as long as a certain set of requirements is achieved. Software is normally developed and distributed using version control systems, such as [git](https://git-scm.com/). Platforms that provide repositories for these version control systems, like for example GitLab or GitHub, often offer extra functionalities related to code management by integrating the version control with other documentation or task management systems (for example to link a new release to a set of solved issues). Such integration possibilities makes them good candidates to provide a Bioinformatics QMS system. In this document, we offer guidelines on how to comply to ISO-15189 while implementing a Bioinformatics friendly QMS.
 
-!!! note
+!!! note ""
 
     Note that, documentation outside of the medical laboratories QMS should be traceable, i.e. references need to be made to the Bioinformatics QMS where applicable. 
 
