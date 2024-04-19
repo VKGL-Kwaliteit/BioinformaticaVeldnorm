@@ -3,6 +3,7 @@
 ## Abbreviations
 -   GIAB: Genome In A Bottle
 -   FMEA: Failure Mode and Effects Analysis
+-   GDPR: General Data Protection Regulation
 -   IEC: International Electrotechnical Commission
 -   IGV: Integrative Genomics Viewer
 -   IMDRF: International Medical Device Regulators Forum
