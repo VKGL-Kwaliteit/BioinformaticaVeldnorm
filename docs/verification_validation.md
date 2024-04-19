@@ -13,8 +13,8 @@ The following citation is taken from IMDRF/SaMD WG/N23 FINAL:2015 "Software as a
 
 In short, Barry Boehm expressed the difference between the software verification and software validation as follows:
 
-> -   Verification: Are we building the product right?
-> -   Validation: Are we building the right product?
+> **Verification**: Are we building the product right?          
+> **Validation**: Are we building the right product?
 
 Hence, for each release _Software verification_ **and** _Software validation_ is required.
 
