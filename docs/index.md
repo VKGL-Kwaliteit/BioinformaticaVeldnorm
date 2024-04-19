@@ -1,9 +1,9 @@
 # Introduction
 
-In the past years bioinformatics has become a crucial part of several medical laboratories, such as Genetics, Pathology and Medical Microbiology. In the Netherlands these laboratories are certified according to ISO-15189 and have to follow European and national laws about the use of IT in a medical background and regulations about privacy and data protection. Hence, bioinformaticians need to comply to both the ISO-15189 and the IVDR.
+In the past years bioinformatics has become a crucial part of several medical laboratories, such as Genetics, Pathology and Medical Microbiology. In the Netherlands these laboratories are accredited according to ISO-15189 and have to follow European and national laws. Hence, bioinformaticians need to comply to both the ISO-15189, the IVDR and the GDPR.
 
 The ISO-15189 does not include specific requirements for bioinformatic or software development processes.
-The IEC-62304, however, is a harmonized standard about "Medical device software – Software life cycle processes" and can be used, as it complements the general requirements as described in ISO-15189 ^[Do we want to refer to a article here?].
+The IEC-62304, however, is a harmonized standard about "Medical device software – Software life cycle processes" and can be used, as it complements the general requirements as described in ISO-15189 [^1].
 Whilst the use of this standard remains voluntary, it nonetheless gives good guidance on how to achieve compliance with legal requirements.
 
 We therefore used the IEC-62304 as a guide to create a field standard for bioinformatics, in order to make sure that the software we create is developed and manufactured in accordance with state-of-the-art principles for development life cycles, and risk management, including verification and validation, as required by the IVDR (Annex I, point 16). Note however, that we only focussed on the documentation needed for IEC-62304 Software Class A.
@@ -19,11 +19,11 @@ While we were writing this field standard, it became clear to us that the size o
 
 ## Out of scope
 
--   Bioinformatic workflows for which the results are used within health care institutions without interpretation under the supervision by trained clinical laboratory specialists. For these workflows more documentation is needed, as they are most likely Class B or C in the IEC-62304. The same holds for workflows that include AI.
+-   Bioinformatic workflows for which the results are used within health care institutions without interpretation by trained clinical laboratory specialists. For these workflows more documentation is needed, as they are most likely Class B or C in the IEC-62304. The same holds for workflows that include AI.
 -   Personnel (6.2 in ISO-15189:2022), as this should be covered by QMS of the medical Laboratory already.
--   Datamanagement and retention periods of data are mentioned in another field standard[^1].
+-   Datamanagement and retention periods of data are mentioned in another field standard [^2].
 
-## Software Safety Classication according to the IEC-62304
+## Software Safety Classication according to the IEC-62304 [^3]
 
 The SOFTWARE SYSTEM is software safety class A if:
 
@@ -38,7 +38,6 @@ The SOFTWARE SYSTEM is software safety class C if:
 
 - The SOFTWARE SYSTEM can contribute to a HAZARDOUS SITUATION which results in unacceptable RISK after consideration of RISK CONTROL measures external to the SOFTWARE SYSTEM and the resulting possible HARM is death or SERIOUS INJURY.
 
-<!-- ![Software Safety Classes^reference](img/IEC-62304-Software-Safety-Classes.png "Software Safety Classes") -->
 
 ```mermaid
 flowchart TD
@@ -51,5 +50,13 @@ flowchart TD
     B -->|No| F(Class A)
     D -->|No| F(Class A)
 ```
+Flowdiagram adapted from IEC-62304, Figure 3 – Assigning software safety classification.
 
-[^1]: Here goes the reference for datamanagement and retention periods.
+In determining the software safety classification of the SOFTWARE SYSTEM:
+-    Probability of a software failure shall be assured to be 1.
+-    Only RISK CONTROL measures not implemented within (External to) the SOFTWARE SYTEM shall be considered.
+NOTE: Such RISK CONTROL measures may reduce the probability that a software failure will cause HARM, and/or the severity of that HARM.      
+
+[^1]: van Deutekom HWM, Haitjema S. Recommendations for IVDR compliant in-house software development in clinical practice: a how-to paper with three use cases. Clin Chem Lab Med. 2022. PMID: [35538674](https://www.degruyter.com/document/doi/10.1515/cclm-2022-0278/html).
+[^2]: [Veldnorm VKGL](https://www.vkgl.nl/nl/kwaliteit/formulieren-documenten-kwaliteit/7-veldnormen).
+[^3]: IEC-62304: Medical device software – software life cycle processes
