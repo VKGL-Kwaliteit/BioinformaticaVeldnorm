@@ -50,12 +50,17 @@ flowchart TD
     B -->|No| F(Class A)
     D -->|No| F(Class A)
 ```
+
 Flowdiagram adapted from IEC-62304, Figure 3 – Assigning software safety classification.
 
 In determining the software safety classification of the SOFTWARE SYSTEM:
--    Probability of a software failure shall be assured to be 1.
--    Only RISK CONTROL measures not implemented within (External to) the SOFTWARE SYTEM shall be considered.
-NOTE: Such RISK CONTROL measures may reduce the probability that a software failure will cause HARM, and/or the severity of that HARM.      
+
+- Probability of a software failure shall be assured to be 1.
+- Only RISK CONTROL measures not implemented within (External to) the SOFTWARE SYTEM shall be considered.
+
+!!!note
+
+     Such RISK CONTROL measures may reduce the probability that a software failure will cause HARM, and/or the severity of that HARM.      
 
 [^1]: van Deutekom HWM, Haitjema S. Recommendations for IVDR compliant in-house software development in clinical practice: a how-to paper with three use cases. Clin Chem Lab Med. 2022. PMID: [35538674](https://www.degruyter.com/document/doi/10.1515/cclm-2022-0278/html).
 [^2]: [Veldnorm VKGL](https://www.vkgl.nl/nl/kwaliteit/formulieren-documenten-kwaliteit/7-veldnormen).
