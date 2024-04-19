@@ -6,7 +6,7 @@ One of the main responsibilities of bioinformaticians working in a medical labor
 
 Planning entails developing a comprehensive software development plan. This includes brainstorming the initial ideas, ideation of the final goal, determining the necessary resources, creating a schedule, and establishing achievable milestones. Bioinformaticians should establish a clear communication path with stakeholders during this stage to ensure that the plan meets the goal. Within a laboratory, software development often occurs in the background of laboratory tests. The laboratory therefore needs to develop a solid strategy for change management for its tests that emphasizes all these characteristics, and software development should be an integral part of this strategy. Smaller-scale software development and maintenance cycles that might not affect other areas of a laboratory should maintain a similar strategy, although on a smaller scale and less demanding. Guidelines should cover and define both large-scale and small-scale strategies.
 
-!!! note
+!!! note ""
 
     Examples of small scale and large scale projects could be:
 
@@ -89,6 +89,6 @@ Maintenance primarily centers around fixing bugs, monitoring the software, intro
 
 Hotfixes are updates which are directly uploaded in to the actual live software without going through the development, testing and implementation phases of the SDLC. They are meant as a quick way to fix unforeseen but process breaking bugs. In general, having well-defined development, testing and implementation processes would negate the need for hotfixes. However, there is always the possibility for bugs to occur, or for interactions with other (third party) software to change. The process of performing a hotfix should be documented. 
 
-!!! note
+!!! failure "" 
 
     Hotfixes could be classified as non-conforming work and might need to be followed up through the laboratories QMS, more on this in [user feedback](feedback.md)
