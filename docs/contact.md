@@ -19,4 +19,4 @@ The following people were involved with writing and reviewing.
 
 You can provide feedback for this field standard, or leave comments or suggestions for improvement by filing an [issue](https://github.com/VKGL-Kwaliteit/BioinformaticaVeldnorm/issues), which is open to everybody.
 
-The first version was released on 19th of April 2024, the date last modified will be present in the bottom of each page. 
+The first version was released in April 2024, the date last modified will be present on the bottom of each page. 
