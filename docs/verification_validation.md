@@ -51,7 +51,7 @@ ISO-15189 states that the validation shall be as extensive as is necessary and c
 
 Depending on the changes in the software, and in particular for the first version of the software a performance evaluation is needed. MDCG 2020-1 (Guidance on Clinical Evaluation (MDR) / Performance Evaluation (IVDR) of Medical Device Software) could help in determining the extend of the validation and/or the number of samples needed. Note that, this guidance helps with Chapter VI of the IVDR, which is not mentioned in article 5.5 for in house developed tests, but could give guidance to define the extend of your validation. For example the following points taken from MDCG 2020-1.
 
-!!! quote
+!!! quote ""
 
     ### Sufficient amount
 
