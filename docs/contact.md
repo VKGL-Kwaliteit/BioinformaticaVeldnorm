@@ -1,6 +1,6 @@
 # Contact
 
-With the arrival of the IVDR, and the need for audits on bioinformatics by competent authorities such as the Raad voor Accreditatie (NL), there was a need for a field standard about bioinformatics, as from the ISO-15189 it is unclear what to audit for bioinformatics. This field standard has been initiated by Hanneke van Deutekom, member of the quality committee of the [VKGL](https://vkgl.nl/nl/) and technical assessor bioinformatics at the Raad voor Accreditatie.
+With the arrival of the IVDR, and the need for audits on bioinformatics by an accreditation body authorities such as the [Raad voor Accreditatie](https://www.rva.nl/en/about-the-rva/), there was a need for a field standard for bioinformatics, as from the ISO-15189 it is unclear what to audit for bioinformatics. This field standard has been initiated by Hanneke van Deutekom, member of the quality committee of the [VKGL](https://vkgl.nl/nl/) and technical assessor bioinformatics at the Raad voor Accreditatie.
 
 Bioinformaticians from all the genetic medical laboratories in the Netherlands gathered to discuss the processes used to develop software. The processes within the different centers and the IEC-62304 were used as a guidance to create this field standard for bioinformatics.
 
@@ -19,4 +19,4 @@ The following people were involved with writing and reviewing.
 
 You can provide feedback for this field standard, or leave comments or suggestions for improvement by filing an [issue](https://github.com/VKGL-Kwaliteit/BioinformaticaVeldnorm/issues), which is open to everybody.
 
-The first version was released on 19th of April 2024.
+The first version was released on 19th of April 2024, the date last modified will be present in the bottom of each page. 
