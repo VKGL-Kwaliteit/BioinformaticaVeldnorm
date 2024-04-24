@@ -10,48 +10,35 @@ Which procedures need to be documented for the development of pipelines, workflo
 
 ## Badges
 
-[![documentation](https://img.shields.io/badge/documentation-vuepress-material--blue)](https://vkgl-kwaliteit.github.io/BioinformaticaVeldnorm/)
-[![vuepress](https://img.shields.io/badge/vuepress-2.0.0--beta.62-green?style=flat&link=https://v2.vuepress.vuejs.org/)](https://v2.vuepress.vuejs.org/)
-[![vue](https://img.shields.io/badge/vue-3.3.1-green?style=flat&link=https://vuejs.org/)](https://vuejs.org/)
-[![pnpm](https://img.shields.io/badge/pnpm-8.5.1-green?style=flat&link=https://pnpm.io/)](https://pnpm.io/)
-[![node](https://img.shields.io/badge/node-16.18.0-green?style=flat&link=https://nodejs.org)](https://nodejs.org)
+[![documentation](https://img.shields.io/badge/Documentation-mkdocs-material--blue)](https://vkgl-kwaliteit.github.io/BioinformaticaVeldnorm/)
+[![python](https://img.shields.io/badge/Python-3.10-green?style=flat&link=https://www.python.org/)](https://v2.vuepress.vuejs.org/)
+[![poetry](https://img.shields.io/badge/Poetry-latest-green?style=flat&link=https://python-poetry.org/)](https://vuejs.org/)
+
 
 ## Installation
 
-### Node
+### Prerequisites
 
-First install Node Version Manager (NVM):
+- Python 3.10
+
+### Poetry
+
+[Poetry](https://python-poetry.org/) is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you. Poetry offers a lockfile to ensure repeatable installs.
+
+Install Poetry via:
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+curl -sSL https://install.python-poetry.org | python3 -
 ```
 
-To verify if NVM has been installed, do:
+For more information go [to](https://python-poetry.org/docs/#installing-with-the-official-installer).
+
+### Installing dependencies
+
+To install the defined dependencies for your project, navigate to the project folder and execute:
 
 ```bash
-nvm -v
-```
-
-This outputs `0.39.3` if the installation was successful. If there is an error try to debug with the [official documentation](https://github.com/nvm-sh/nvm#table-of-contents).
-
-Next install the correct Node version via NVM:
-
-```bash
-nvm install 16.18.0
-```
-
-### Pnpm
-
-Install the correct version of pnpm via:
-
-```bash
-curl -fsSL https://get.pnpm.io/install.sh | env PNPM_VERSION=8.5.1 sh -
-```
-
-Now navigate to the project folder and run:
-
-```bash
-pnpm install
+poetry install
 ```
 
 ## Development
@@ -104,17 +91,17 @@ Some handies (feel free to add if you like more):
 | \`command`                                     | Code                                                                |                             `command`                             |
 | \```bash commands ```                          | Code block (can use syntax highlighting by indicating the language) |                      `this is a code block `                      |
 | \[text](link)                                  | Hyperlink                                                           | [extended syntax](https://www.markdownguide.org/extended-syntax/) |
-| \![alt text]\(image_file.png "Optional title") | Image                                                               |                ![VKGL logo](VKGL-logo.webp 'VKGL')                |
+| \![alt text]\(image_file.png "Optional title") | Image                                                               |                ![VKGL logo](docs/img/VKGL-logo.webp 'VKGL')                |
 
 #### Test your additions
 
-To start the development version first navigate to the project folder. Next run the pnpm command:
+To start the development version first navigate to the project folder. Next run the command:
 
 ```bash
-pnpm docs:dev
+poetry run mkdocs serve
 ```
 
-This starts a local development version that can be viewed in a browser via `localhost:8080`.
+This starts a local development version that can be viewed in a browser via `localhost:8000` or `127.0.0.1:8000`.
 
 #### Finish your addition
 
