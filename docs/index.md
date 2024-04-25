@@ -58,7 +58,7 @@ In determining the software safety classification of the SOFTWARE SYSTEM:
 - Probability of a software failure shall be assured to be 1.
 - Only RISK CONTROL measures not implemented within (External to) the SOFTWARE SYTEM shall be considered.
 
-!!!note
+!!!note ""
 
      Such RISK CONTROL measures may reduce the probability that a software failure will cause HARM, and/or the severity of that HARM.      
 
