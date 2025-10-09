@@ -8,6 +8,8 @@ Field standard for Bioinformatics within Medical Laboratories
 
 Which procedures need to be documented for the development of pipelines, workflows or tools.
 
+This Field standard is "Veldnorm nummer 8" for the [VKGL](https://www.vkgl.nl/nl/kwaliteit/formulieren-documenten-kwaliteit/7-veldnormen). 
+
 ## Badges
 
 [![documentation](https://img.shields.io/badge/Documentation-mkdocs-material--blue)](https://vkgl-kwaliteit.github.io/BioinformaticaVeldnorm/)
