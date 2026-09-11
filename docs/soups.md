@@ -1,6 +1,6 @@
 # SOUP - Software of Unknown Provenance
 
-Software of unknown provenance (SOUP) is a software item that is already developed, generally available and not developed for the purpose of being incorporated into your bioinformatic workflow, or a software item for which documentation of the development process are not available.
+Software of unknown provenance (SOUP) is a software item that is already developed, generally available and not developed for the purpose of being incorporated into your bioinformatic workflow, or a software item for which documentation of the development process is not available.
 
 ISO 15189 does not include any mention of SOUPs. The term originates from IEC-62304. Please note that, as mentioned in the [Introduction](index.md#introduction), this field standard for SOUPs limits itself to IEC-62304 Software Class A.
 
@@ -38,20 +38,13 @@ What to document about a SOUP depends on the role of the SOUP in the bioinformat
 
 If the SOUP is used as a standalone infrastructural or outcome-determining tool, then separate validation is required following [Software Verification & Software Validation](verification_validation.md#software-verification--software-validation). Any other SOUP does not have to be validated individually. Instead, validation is deferred to the validation process of the workflow / software release that encorporates the SOUP.
 
-Note that grouping (see [Granularity](#granularity)) an outcome-determining SOUP into a group of lower level SOUPs changes the whole group into Outcome-determining SOUP.
+Note that grouping, for example, an outcome-determining SOUP into a group of lower level SOUPs (see [Granularity](#granularity)) changes the whole group into an outcome-determining SOUP.
 
 #### I - Version pinning
 
-Version pinning means that the software explicitly defines which versions are part of its build or deployment. The list of dependencies and versions should be stored so that a build or deployment can be accurately reproduced. A range of suitable version pinning tools is readily available across various ecosystems. Some examples include:
+Version pinning means that the software explicitly locks the versions of software items that are part of its build or deployment. This is necessary to be able to accurately reproduce a build or deployment.
 
-- `pip-tools` with a `requirements.txt` or `pyproject.toml`
-- `uv` with a `uv.lock`
-- `conda` environments with a `.pin.txt`
-- `pixi` with a `pixi.lock`
-- `npm` with a `package-lock.json`
-- `yarn` with a `yarn.lock`
-
-Note that these tools don't enforce exact version pinning by default, so this has to be managed by the developer. Also note that storing integrity hashes in lockfiles (e.g. using pip's `--require-hashes` parameter) provides extra protection against malformed or replaced packages.
+A range tools that are suitable for version pinning is readily available across various ecosystems. Some examples include `pip`, `poetry`, `uv`, `conda`, `pixi`, `npm`, `yarn`. Note that these tools don't enforce exact version pinning by default, so this has to be managed by the developer (e.g. by using `uv lock`). Also note that storing integrity hashes in lockfiles (e.g. using pip's `--require-hashes` parameter) provides extra protection against malformed or replaced packages.
 
 For a specific release, build or deployment, the pinned lockfile that was used needs to be available. Tracking lockfiles using git is recommended.
 
