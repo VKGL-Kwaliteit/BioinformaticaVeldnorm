@@ -52,7 +52,7 @@ For some SOUPs some manual effort is required for version pinning, for example w
 
 #### II - Registration
 
-The registration of SOUP comprises the documentation of the following items:
+The complete registration of a SOUP should have the following items recorded:
 
 - Name: Name of SOUP.
 - Origin: Link (URL) to source repository or publication.
