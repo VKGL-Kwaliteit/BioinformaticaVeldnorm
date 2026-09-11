@@ -2,7 +2,7 @@
 
 Software of unknown provenance (SOUP) is a software item that is already developed, generally available and not developed for the purpose of being incorporated into your bioinformatic workflow, or a software item for which documentation of the development process is not available.
 
-ISO 15189 does not include any mention of SOUPs. The term originates from IEC-62304. Please note that, as mentioned in the [Introduction](index.md#introduction), this field standard for SOUPs limits itself to IEC-62304 Software Class A.
+ISO-15189 does not include any mention of SOUPs. The term originates from IEC-62304. Please note that, as mentioned in the [Introduction](index.md#introduction), this field standard for SOUPs limits itself to IEC-62304 Software Class A.
 
 ## A policy for working with SOUPs
 
