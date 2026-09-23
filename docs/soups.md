@@ -32,23 +32,25 @@ Note that a prerequisite for grouping SOUPs is that dependencies are pinned. See
 
 What to document about a SOUP depends on the role of the SOUP in the bioinformatic workflow and the diagnostic process. We distinguish between three types of SOUPs. Each subsequent type of SOUP requires an increasing level of SOUP management efforts.
 
-- _Supporting SOUP_: a software item that does not interact with patient data directly. Examples include linters, CI-runners, pytest, mkdocs. For such SOUPs, no additional documentation is required, though including them in version pinning (I) is recommended.
-- _Infrastructural SOUP_: a software item that does not determine results, but that carries or transports patient data or that assists the diagnostic process. Examples include Nextflow, Snakemake, Docker, Slurm, backend or frontend stacks, and data visualization tools. Software that uses infrastructural SOUPs should apply version pinning and registration (I + II).
-- _Outcome-determining SOUP_: a software item that directly influences diagnostic results. It directly modifies data, or it is used to make decisions that influences diagnostic outcomes. Examples include samtools, BWA, WisecondorX, reference genomes, annotation databases. Software using outcome-determining SOUPs should apply version pinning, registration and risk assessment (I + II + III).
+- _Supporting SOUP_: a software item that does not interact with patient data directly. Examples include linters, CI-runners, pytest, mkdocs. For such SOUPs, no additional documentation is required, though ensuring reproducibility (I) is recommended.
+- _Infrastructural SOUP_: a software item that does not determine results, but that carries or transports patient data or that assists the diagnostic process. Examples include Nextflow, Snakemake, Docker, Slurm, backend or frontend stacks, and data visualization tools. Software that uses infrastructural SOUPs should ensure reproducibility and register SOUPs (I + II).
+- _Outcome-determining SOUP_: a software item that directly influences diagnostic results. It directly modifies data, or it is used to make decisions that influences diagnostic outcomes. Examples include samtools, BWA, WisecondorX, and annotation databases. Software using outcome-determining SOUPs should ensure reproducibility, register SOUPS and include a risk assessment (I + II + III).
 
 If the SOUP is used as a standalone infrastructural or outcome-determining tool, then separate validation is required following [Software Verification & Software Validation](verification_validation.md#software-verification--software-validation). Any other SOUP does not have to be validated individually. Instead, validation is deferred to the validation process of the workflow / software release that encorporates the SOUP.
 
 Note that grouping, for example, an outcome-determining SOUP into a group of lower level SOUPs (see [Granularity](#granularity)) changes the whole group into an outcome-determining SOUP.
 
-#### I - Version pinning
+#### I - Reproducibility
 
-Version pinning means that the software explicitly locks the versions of software items that are part of its build or deployment. This is necessary to be able to accurately reproduce a build or deployment.
+For every release it must be possible to know which SOUP versions were used and to recreate the environment in which the software was used. We can achieve this with version pinning and containerization.
 
-A range tools that are suitable for version pinning is readily available across various ecosystems. Some examples include `pip`, `poetry`, `uv`, `conda`, `pixi`, `npm`, `yarn`. Note that these tools don't enforce exact version pinning by default, so this has to be managed by the developer (e.g. by using `uv lock`). Also note that storing integrity hashes in lockfiles (e.g. using pip's `--require-hashes` parameter) provides extra protection against malformed or replaced packages.
+Version pinning means that the software explicitly locks the versions of software items that are part of its build or deployment, for example by listing them in a lockfile. This is necessary to be able to accurately reproduce a build or deployment. A range tools that are suitable for version pinning is readily available across various ecosystems. Some examples include `pip`, `poetry`, `uv`, `conda`, `pixi`, `npm`, `yarn`. Note that these tools don't enforce exact version pinning by default, so this has to be managed by the developer (e.g. by using `uv lock`).
 
-For a specific release, build or deployment, the pinned lockfile that was used needs to be available. Tracking lockfiles using git is recommended.
+Containerization with tools like `docker`, `podman`, `apptainer` or `singularity` can also provide reproducibility of the operating system and system libraries.
 
-For some SOUPs some manual effort is required for version pinning, for example when using annotation databases and reference genomes. In these cases it is necessary to record the release identifiers, and, where possible, to checksum and archive relevant files.
+For a specific release, build or deployment, the pinned lockfiles, container images and container build instructions that were used need to be available for reproducibility. Tracking such information using git is recommended.
+
+For some SOUPs some manual effort is required for version pinning, for example when using annotation databases. In such cases it is necessary to record the release identifiers, and, where possible, to checksum and archive relevant files.
 
 #### II - Registration
 
