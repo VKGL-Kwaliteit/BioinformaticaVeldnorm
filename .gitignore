@@ -1,7 +1,0 @@
-# node system
-node_modules
-.temp
-.cache
-
-# IDE's or development programmes
-.idea/

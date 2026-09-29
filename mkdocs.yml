@@ -1,0 +1,76 @@
+site_name: Field standard bioinformatics
+site_url: https://vkgl-kwaliteit.github.io/BioinformaticaVeldnorm/
+
+repo_url: https://github.com/VKGL-Kwaliteit/BioinformaticaVeldnorm
+repo_name: BioinformaticaVeldnorm
+
+copyright: Copyright © 2023-present VKGL-Kwaliteit
+
+theme:
+  language: en
+  name: material
+  favicon: img/icon.png
+  logo: img/icon.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.top
+    - navigation.footer
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - toc:
+      title: On this page
+  - pymdownx.snippets:
+      auto_append:
+        - includes/hide-edit.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+  - mermaid2:
+      arguments:
+        theme: |
+          ^(JSON.parse(__md_get("__palette").index == 1)) ? 'light' : 'dark'
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+
+nav:
+  - "Introduction": "index.md"
+  - "Control of documents": "control_of_documents.md"
+  - "Software development life cycle": "software_life_cycle_processes.md"
+  - "Software verification & validation": "verification_validation.md"
+  - "Risk management": "risk_management.md"
+  - "Feedback": "feedback.md"
+  - "Configuration management": "configuration_management.md"
+  - "SOUPS": "soups.md"
+  - "Abbrevations and definitions": "abbreviations.md"
+  - "References": "references.md"
+  - "Contact": "contact.md"
