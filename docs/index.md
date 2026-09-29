@@ -6,7 +6,7 @@ The ISO-15189 does not include specific requirements for bioinformatic or softwa
 The IEC-62304, however, is a harmonized standard about "Medical device software – Software life cycle processes" and can be used, as it complements the general requirements as described in ISO-15189 [^1].
 Whilst the use of this standard remains voluntary, it nonetheless gives good guidance on how to achieve compliance with legal requirements.
 
-We therefore used the IEC-62304 as a guide to create a field standard for bioinformatics, in order to make sure that the software we create is developed and manufactured in accordance with state-of-the-art principles for development life cycles, and risk management, including verification and validation, as required by the IVDR (Annex I, point 16). Note however, that we only focussed on the documentation needed for IEC-62304 Software Class A.
+We therefore used the IEC-62304 as a guide to create a field standard for bioinformatics, in order to make sure that the software we create is developed and manufactured in accordance with state-of-the-art principles for development life cycles, and risk management, including verification and validation, as required by the IVDR (Annex I, point 16). Note however, that we only focused on the documentation needed for IEC-62304 Software Class A.
 
 The main goal of this document is to give guidance on what should be documented to comply to the ISO-15189 norm and the IVDR. We tried to make pragmatic choices, and provide clarity on what should be documented.
 
@@ -23,7 +23,7 @@ While we were writing this field standard, it became clear to us that the size o
 -   Personnel (6.2 in ISO-15189:2022), as this should be covered by QMS of the medical Laboratory already.
 -   Datamanagement and retention periods of data are mentioned in another field standard [^2].
 
-## Software Safety Classication according to the IEC-62304 [^3]
+## Software Safety Classification according to the IEC-62304 [^3]
 
 The SOFTWARE SYSTEM is software safety class A if:
 
@@ -42,7 +42,7 @@ The SOFTWARE SYSTEM is software safety class C if:
 ```mermaid
 flowchart TD
     A("software is Class C (default)") --> B{Can a hazardous <br> situation arise from a <br> failure of the software}
-    B -->|Yes| C[[Evaulate effectiveness <br> of risk control measures <br> external to software]]
+    B -->|Yes| C[[Evaluate effectiveness <br> of risk control measures <br> external to software]]
     C --> D{Can failure of the <br> software result in <br> unacceptable risk?}
     D -->|Yes| E{What severity of <br> injury is possible}
     E -->|non serious injury| G(Class B)
