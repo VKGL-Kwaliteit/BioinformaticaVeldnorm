@@ -61,6 +61,10 @@ plugins:
           ^(JSON.parse(__md_get("__palette").index == 1)) ? 'light' : 'dark'
   - git-revision-date-localized:
       fallback_to_build_date: true
+  - with-pdf:
+      author: VKGL-Kwaliteit Team
+      copyright: 2023-2026 VKGL-Kwaliteit
+      cover_subtitle: for the Vereniging Klinisch Genetische Laboratoriumdiagnostiek
 
 nav:
   - "Introduction": "index.md"
